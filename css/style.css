@@ -1,3 +1,7 @@
+body {
+    letter-spacing: -0.025em;
+}
+
 * {
     font-family: 'Noto Sans KR', sans-serif;
 }
@@ -21,6 +25,7 @@ header {
     position: fixed;
     left: 0;
     top: 0;
+    z-index: 999;
 }
 
 .inner {
@@ -340,6 +345,7 @@ header {
     display: block;
     clear: both;
     position: absolute;
+    z-index: 1;
 }
 
 .section3 .naverTv_personalInfo::after {
@@ -352,6 +358,7 @@ header {
     position: absolute;
     right: 1px;
     bottom: 0;
+    z-index: 1;
 }
 
 .section3 .naverTv_right::after {
@@ -365,4 +372,232 @@ header {
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/*========== 섹션4 ==========*/
+
+.section4 {
+    height: 3055px;
+    background-color: #020100;
+    padding-top: 164px;
+}
+
+.section4 .title_wrap {
+    text-align: center;
+}
+
+.section4 .title_wrap .sub_title {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    color: #ffffff;
+    margin-bottom: 35px;
+}
+
+.section4 .title_wrap .title {
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: -1.25px;
+    color: #e4793a;
+    margin-bottom: 41px;
+}
+
+.section4 .title_wrap .text {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.75;
+    letter-spacing: -0.5px;
+    color: #ffffff;
+    margin-bottom: 82px;
+}
+
+.section4 .contents_wrap {
+    margin-bottom: 145px;
+}
+
+.section4 .contents1,
+.section4 .contents2 {
+    width: 570px;
+    height: 897px;
+    float: left;
+}
+
+.section4 .contents1 {
+    margin-right: 28px;
+    background-image: url(../imgs/cast1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section4 .contents2_first,
+.section4 .contents2_second {
+    height: 434px;
+}
+
+.section4 .contents2_first {
+    margin-bottom: 30px;
+    background-image: url(../imgs/cast2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section4 .contents2_second {
+    background-image: url(../imgs/cast3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section4 .contents_wrap::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.section4 .schedule_wrap {
+    margin-bottom: 274px;
+}
+
+.section4 .schedule_wrap dl {
+    font-size: 0;
+    margin-bottom: 48px;
+}
+
+.section4 .schedule_wrap dl:last-of-type {
+    margin-bottom: 227px;
+}
+
+.section4 .schedule_wrap dt {
+    display: inline-block;
+    color: #e4793a;
+    font-size: 30px;
+    font-weight: 300;
+    margin-right: 89px;
+    line-height: 1.5;
+    float: left;
+}
+
+.section4 .schedule_wrap dd {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: -0.025em;
+    color: #ffffff;
+    float: left;
+}
+
+.section4 .schedule_wrap dd span {
+    font-weight: 300;
+}
+
+.section4 .schedule_wrap dl:last-child dt {
+    letter-spacing: -0.02em;
+}
+
+.section4 .schedule_wrap dl::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.section4 .schedule_wrap li {
+    width: 570px;
+    float: left;
+}
+
+.section4 .schedule_wrap li:first-of-type {
+    margin-right: 30px;
+}
+
+.section4 .schedule_wrap .sub_title {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    color: #ffffff;
+    text-align: left;
+}
+
+.section4 .schedule_wrap .title {
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    color: #e4793a;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.section4 .schedule_wrap .title_wrap {
+    border-bottom: 1px solid #717171;
+}
+
+.section4 .playlist_wrap {
+    padding: 30px 0;
+    height: 221px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #717171;
+    margin-bottom: 32px;
+}
+
+.section4 .playlist_wrap p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 2;
+    letter-spacing: -0.025em;
+    color: #ffffff;
+}
+
+.section4 .playlist_wrap p span {
+    font-weight: 500;
+}
+
+.section4 .schedule_wrap .text {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.83;
+    letter-spacing: -0.025em;
+    color: #a6a6a6;
+}
+
+.section4 .schedule_wrap ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.section4 .ticket_wrap .ticket {
+    display: table;
+    height: 90px;
+    margin: 0 auto;
+}
+
+.section4 .ticket_wrap img {
+    margin-right: 40px;
+}
+
+.section4 .ticket_wrap h2 {
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: -0.025em;
+    line-height: normal;
+    color: #ffffff;
+    text-align: left;
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 78px;
+}
+
+.section4 .ticket_wrap button {
+    width: 318px;
+    height: 90px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #e4793a;
+    display: table-cell;
+    vertical-align: text-bottom;
+    font-size: 25px;
+    font-weight: normal;
+    letter-spacing: -0.025em;
+    color: #ffffff;
 }
