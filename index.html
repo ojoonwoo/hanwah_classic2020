@@ -7,10 +7,12 @@
     <title>한화 클래식 2020</title>
     <!-- Reset CSS -->
     <link rel="stylesheet" href="./css/reset.css">
-    <!-- 웹 폰트 -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- 폰트 -->
+    <link rel="stylesheet" href="css/font.css">
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- jquery -->
+    <script src="./js/jquery-3.5.1.min.js"></script>
 </head>
 
 <body>
@@ -105,15 +107,30 @@
         <section class="section4">
             <div class="inner">
                 <div class="title_wrap">
-                    <h3 class="sub_title">Program Guide</h3>
-                    <h2 class="title">출연진 및 프로그램</h2>
+                    <h3 class="sub_title common_subTitle">Program Guide</h3>
+                    <h2 class="title common_title">출연진 및 프로그램</h2>
                     <p class="text">세계적인 소프라노 임선혜와 한화클래식을 위해 특별히 결성된 바로크 앙상블로,<br>국내외에서 활발하게 활동하는 바로크 연주자를 소개합니다.</p>
                 </div>
                 <div class="contents_wrap">
-                    <div class="contents1"></div>
+                    <div class="contents1 sec4_content">
+                        <div class="text_wrap">
+                            <h2 class="title">소프라노 임선혜</h2>
+                            <p class="text">서울대 성악과 졸업, 독일 칼스루 국립음악대학 최고연주자<br>과정을수료하였습니다. 세계 거장들과 함께 세계무대에서 활동<br>중인 소프라노입니다. 탁월한 언어적 지성으로 노래의 정서를 풀어<br>낸다는 평을 받고 있습니다.</p>
+                        </div>
+                    </div>
                     <div class="contents2">
-                        <div class="contents2_first"></div>
-                        <div class="contents2_second"></div>
+                        <div class="contents2_first sec4_content">
+                            <div class="text_wrap">
+                                <h2 class="title">소프라노 임선혜</h2>
+                                <p class="text">서울대 성악과 졸업, 독일 칼스루 국립음악대학 최고연주자<br>과정을수료하였습니다. 세계 거장들과 함께 세계무대에서 활동<br>중인 소프라노입니다. 탁월한 언어적 지성으로 노래의 정서를 풀어<br>낸다는 평을 받고 있습니다.</p>
+                            </div>
+                        </div>
+                        <div class="contents2_second sec4_content">
+                            <div class="text_wrap">
+                                <h2 class="title">소프라노 임선혜</h2>
+                                <p class="text">서울대 성악과 졸업, 독일 칼스루 국립음악대학 최고연주자<br>과정을수료하였습니다. 세계 거장들과 함께 세계무대에서 활동<br>중인 소프라노입니다. 탁월한 언어적 지성으로 노래의 정서를 풀어<br>낸다는 평을 받고 있습니다.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="schedule_wrap">
@@ -171,8 +188,8 @@
         <section class="section5">
             <div class="inner">
                 <div class="title_wrap">
-                    <h3 class="sub_title">Introduce</h3>
-                    <h2 class="title">공연 소개 영상</h2>
+                    <h3 class="sub_title common_subTitle">Introduce</h3>
+                    <h2 class="title common_title">공연 소개 영상</h2>
                 </div>
                 <div class="video_wrap">
                     <iframe src='https://tv.naver.com/embed/8731791?autoPlay=true' frameborder='no' scrolling='no' marginwidth='0' marginheight='0' WIDTH='1066' HEIGHT='600' allow='autoplay' allowfullscreen></iframe>
@@ -180,9 +197,101 @@
             </div>
         </section>
         <section class="section6">
-            <div class="inner"></div>
+            <div class="inner">
+                <div class="title_wrap">
+                    <h3 class="sub_title common_subTitle">Past Hanwha Classic</h3>
+                    <div class="title">
+                        <img src="./imgs/past_hanwha_classic.png" alt="지난 한화클래식">
+                    </div>
+                </div>
+                <div class="tab_wrap">
+                    <div class="tabs">
+                        <button type="button" class="tab_link active">1회</button>
+                        <button type="button" class="tab_link">2회</button>
+                        <button type="button" class="tab_link">3회</button>
+                        <button type="button" class="tab_link">4회</button>
+                        <button type="button" class="tab_link">5회</button>
+                        <button type="button" v class="tab_link">6회</button>
+                    </div>
+                    <div class="tab_contents">
+                        <div class="tab_content active">
+                            <div class="img_wrap">
+                                <img src="./imgs/hanwha_classic_2013.png" alt="한화클래식 2013">
+                            </div>
+                            <div class="text_wrap">
+                                <h2><span>2013년 1회</span><br>헬무트 릴링과 함께하는 고음악 향연</h2>
+                                <p>순수 합창음악의 진수를 선보이는 '서울 모테트합창단'과 소트라노 마렐라 하겐,<br>바리톤 정록기, 메조 소프트라노 김선정, 테너 조성환이 출연하여 단방향의<br>클래식 공연을 넘어 다양한 형태로 관객과 함께하는 클래식 공연이<br>진행되었습니다.</p>
+                            </div>
+                        </div>
+                        <div class="tab_content">
+                            <div class="img_wrap">
+                                <img src="./imgs/hanwha_classic_2013.png" alt="한화클래식 2013">
+                            </div>
+                            <div class="text_wrap">
+                                <h2>2</h2>
+                                <p>2번째</p>
+                            </div>
+                        </div>
+                        <div class="tab_content">
+                            <div class="img_wrap">
+                                <img src="./imgs/hanwha_classic_2013.png" alt="한화클래식 2013">
+                            </div>
+                            <div class="text_wrap">
+                                <h2>3</h2>
+                                <p>3번째</p>
+                            </div>
+                        </div>
+                        <div class="tab_content">
+                            <div class="img_wrap">
+                                <img src="./imgs/hanwha_classic_2013.png" alt="한화클래식 2013">
+                            </div>
+                            <div class="text_wrap">
+                                <h2>4</h2>
+                                <p>4번째</p>
+                            </div>
+                        </div>
+                        <div class="tab_content">
+                            <div class="img_wrap">
+                                <img src="./imgs/hanwha_classic_2013.png" alt="한화클래식 2013">
+                            </div>
+                            <div class="text_wrap">
+                                <h2>5</h2>
+                                <p>5번째</p>
+                            </div>
+                        </div>
+                        <div class="tab_content">
+                            <div class="img_wrap">
+                                <img src="./imgs/hanwha_classic_2013.png" alt="한화클래식 2013">
+                            </div>
+                            <div class="text_wrap">
+                                <h2>6</h2>
+                                <p>6번째</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
+    <script>
+        $(function() {
+
+            /* 섹션6 탭 메뉴 스크립트 */
+            $('.tab_link').click(function() {
+                var index = $(this).index();
+                console.log(index);
+
+                /* 탭 메뉴 활성화 스크립트 */
+                $('.tab_link').removeClass('active');
+                $(this).addClass('active');
+
+                /* 탭 컨텐츠 활성화 스크립트 */
+                $('.tab_content').removeClass('active');
+                $('.tab_content').eq(index).addClass('active');
+            });
+        })
+
+    </script>
 </body>
 
 </html>
