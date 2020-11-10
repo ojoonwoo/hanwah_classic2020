@@ -252,6 +252,8 @@ header {
     font-size: 20px;
     font-weight: 300;
     line-height: 1.75;
+    letter-spacing: -0.05em;
+    word-break: keep-all;
     text-align: left;
     color: #ffffff;
 }
