@@ -313,6 +313,12 @@ header {
 
 .section3 .naverTv_personalInfo {
     position: relative;
+    padding-left: 34px;
+    line-height: 26px;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+    color: #757575;
 }
 
 .section3 .naverTv_personalInfo input {
@@ -324,7 +330,7 @@ header {
 }
 
 .section3 .naverTv_personalInfo::before {
-    background-image: url(../imgs/chcek_off.png);
+    background-image: url(../imgs/check_off.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -333,4 +339,16 @@ header {
     content: '';
     display: block;
     clear: both;
+    position: absolute;
+}
+
+.section3 .naverTv_personalInfo::after {
+    content: "";
+    display: block;
+    clear: both;
+    width: 140px;
+    height: 1px;
+    background-color: #757575;
+    position: absolute;
+    right: 0;
 }
