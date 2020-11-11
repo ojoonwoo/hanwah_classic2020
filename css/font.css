@@ -1,9 +1,4 @@
-@font-face {
-    font-family: 'Baloo Thambi Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Baloo Thambi Regular'), url('../font/BalooThambi-Regular.woff') format('woff');
-}
+
 @font-face {
 	font-family: 'Noto Sans Korean';
 	font-style: normal;
