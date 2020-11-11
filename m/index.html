@@ -94,12 +94,13 @@
                         <div class="form-wrap">
                             <input type="tel" placeholder="‘-’없이 휴대폰번호만 입력해주세요" class="naver_input">
                             <div class="agree-wrap">
-                                <label class="naver_personal_info">개인정보수집동의</label>
-                                <input type="checkbox" name="" value="개인정보 수집동의" class="chk-trigger">
+                                <input type="checkbox" name="" value="개인정보 수집동의" id="chk1" class="chk-trigger">
+                                <label class="naver_personal_info" for="chk1">개인정보수집동의</label>
                             </div>
                             <input type="submit" class="naver_submit" value="공연알림 신청하기">
                         </div>
                     </form>
+                    <img src="./imgs/starbucks_event.png" alt="공연 알림을 신청 해주신 분들 중 100분께 스타벅스 커피 기프티콘을 드립니다">
                 </div>
             </div>
         </section>
@@ -107,47 +108,61 @@
             <div class="inner">
                 <div class="title_wrap">
                     <h3 class="sub_title common_sub_title">Program Guide</h3>
-                    <h2 class="title common_title">출연진 및 프로그램</h2>
-                    <p class="text">세계적인 소프라노 임선혜와 한화클래식을 위해 특별히 결성된 바로크 앙상블로,<br>국내외에서 활발하게 활동하는 바로크 연주자를 소개합니다.</p>
+                    <h2 class="title common_title">출연진 & 프로그램</h2>
+                    <p class="text">세계적인 소프라노 임선혜와 한화클래식을 위해<br/>특별히 결성된 바로크 앙상블로, 국내외에서 활발하게 활동하는<br>바로크 연주자를 소개합니다.</p>
                 </div>
                 <div class="contents_wrap">
-                    <div class="contents1 program_guide_content">
+                    <div class="contents1 program_guide_content desc-parent">
+                        <img src="./imgs/cast1.png" alt="">
                         <div class="text_wrap">
-                            <h2 class="title">소프라노 임선혜</h2>
-                            <p class="text">서울대 성악과 졸업, 독일 칼스루 국립음악대학 최고연주자<br>과정을수료하였습니다. 세계 거장들과 함께 세계무대에서 활동<br>중인 소프라노입니다. 탁월한 언어적 지성으로 노래의 정서를 풀어<br>낸다는 평을 받고 있습니다.</p>
+                            <div class="inner_wrapper">
+                                <h2 class="title">소프라노 임선혜</h2>
+                                <p class="text">서울대 성악과 졸업, 독일 칼스루 국립음악대학 최고연주자<br>과정을 수료하였습니다. 세계 거장들과 함께 세계무대에서 활동<br>중인 소프라노입니다. 탁월한 언어적 지성으로 노래의 정서를 풀어<br>낸다는 평을 받고 있습니다.</p>
+                            </div>
+                            <button type="button" class="layer_close"></button>
                         </div>
                     </div>
-                    <div class="contents2">
+                    <div class="contents2 desc-parent">
                         <div class="contents2_first program_guide_content">
+                            <img src="./imgs/cast2.png" alt="">
                             <div class="text_wrap">
-                                <h2 class="title">소프라노 임선혜</h2>
-                                <p class="text">서울대 성악과 졸업, 독일 칼스루 국립음악대학 최고연주자<br>과정을수료하였습니다. 세계 거장들과 함께 세계무대에서 활동<br>중인 소프라노입니다. 탁월한 언어적 지성으로 노래의 정서를 풀어<br>낸다는 평을 받고 있습니다.</p>
+                                <div class="inner_wrapper">
+                                    <h2 class="title">지휘/리코더 권민석</h2>
+                                    <p class="text">서울대 성악과 졸업, 독일 칼스루 국립음악대학 최고연주자<br>과정을수료하였습니다. 세계 거장들과 함께 세계무대에서 활동<br>중인 소프라노입니다. 탁월한 언어적 지성으로 노래의 정서를 풀어<br>낸다는 평을 받고 있습니다.</p>
+                                </div>
+                                <button type="button" class="layer_close"></button>
                             </div>
                         </div>
                         <div class="contents2_second program_guide_content">
+                            <img src="./imgs/cast3.png" alt="">
                             <div class="text_wrap">
-                                <h2 class="title">소프라노 임선혜</h2>
-                                <p class="text">서울대 성악과 졸업, 독일 칼스루 국립음악대학 최고연주자<br>과정을수료하였습니다. 세계 거장들과 함께 세계무대에서 활동<br>중인 소프라노입니다. 탁월한 언어적 지성으로 노래의 정서를 풀어<br>낸다는 평을 받고 있습니다.</p>
+                                <div class="inner_wrapper">
+                                    <h2 class="title">악장/바이올린 김나연</h2>
+                                    <p class="text">서울대 성악과 졸업, 독일 칼스루 국립음악대학 최고연주자<br>과정을수료하였습니다. 세계 거장들과 함께 세계무대에서 활동<br>중인 소프라노입니다. 탁월한 언어적 지성으로 노래의 정서를 풀어<br>낸다는 평을 받고 있습니다.</p>
+                                </div>
+                                <button type="button" class="layer_close"></button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="schedule_wrap">
-                    <dl>
-                        <dt>일&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;정</dt>
-                        <dd>총 2회 공연 / 공연시간 70분 - 인터미션 없음<br>
-                            <span>2020.12.12.SAT 5:00 PM / 12.16.WED 7:30 PM</span>
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt>
-                            장&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소</dt>
-                        <dd>예술의전당 콘서트홀(서울)</dd>
-                    </dl>
-                    <dl>
-                        <dt>출&nbsp;&nbsp;&nbsp;연&nbsp;&nbsp;&nbsp;진</dt>
-                        <dd>소프라노 임선혜, 지휘/리코더 권민석, 리코더 정윤태, 바리톤 김기훈 등<br>한화 바로크 프로젝트 (악장/바이올린 김나연)</dd>
-                    </dl>
+                    <div class="top-wrap">
+                        <dl>
+                            <dt>일&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;정</dt>
+                            <dd>총 2회 공연 / 공연시간 70분 - 인터미션 없음<br>
+                                <span>2020.12.12.SAT 5:00 PM / 12.16.WED 7:30 PM</span>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                장&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소</dt>
+                            <dd>예술의전당 콘서트홀(서울)</dd>
+                        </dl>
+                        <dl>
+                            <dt>출&nbsp;&nbsp;&nbsp;연&nbsp;&nbsp;&nbsp;진</dt>
+                            <dd>소프라노 임선혜, 지휘/리코더 권민석,<br/>리코더 정윤태, 바리톤 김기훈 등<br>한화 바로크 프로젝트 (악장/바이올린 김나연)</dd>
+                        </dl>
+                    </div>
                     <ul>
                         <li>
                             <div class="title_wrap">
@@ -176,9 +191,8 @@
                 <div class="ticket_wrap">
                     <div class="inner">
                         <div class="ticket">
-                            <img src="./imgs/ticket_icon.png" alt="ticket">
                             <h2>예술의전당, 인터파크에서<br>바로크프로젝트 티켓을 예매하세요!</h2>
-                            <button type="button">예매링크 바로가기</button>
+                            <button type="button"><span>예매링크 바로가기</span></button>
                         </div>
                     </div>
                 </div>
@@ -191,7 +205,8 @@
                     <h2 class="title common_title">공연 소개 영상</h2>
                 </div>
                 <div class="video_wrap">
-                    <iframe src='https://tv.naver.com/embed/8731791?autoPlay=true' frameborder='no' scrolling='no' marginwidth='0' marginheight='0' style="width: 100%; height: auto;" allow='autoplay' allowfullscreen></iframe>
+                    <!-- <iframe src='https://tv.naver.com/embed/8731791?autoPlay=true' frameborder='no' scrolling='no' marginwidth='0' marginheight='0' style="width: 100%; height: auto;" allow='autoplay' allowfullscreen></iframe> -->
+                    <iframe src='https://tv.naver.com/embed/8731791?autoPlay=true' frameborder='no' scrolling='no' marginwidth='0' marginheight='0' allow='autoplay' allowfullscreen></iframe>
                 </div>
             </div>
         </section>
@@ -218,8 +233,8 @@
                                 <img src="./imgs/hanwha_classic_2013.png" alt="한화클래식 2013">
                             </div>
                             <div class="text_wrap">
-                                <h2><span>2013년 1회</span><br>헬무트 릴링과 함께하는 고음악 향연</h2>
-                                <p>순수 합창음악의 진수를 선보이는 '서울 모테트합창단'과 소트라노 마렐라 하겐,<br>바리톤 정록기, 메조 소프트라노 김선정, 테너 조성환이 출연하여 단방향의<br>클래식 공연을 넘어 다양한 형태로 관객과 함께하는 클래식 공연이<br>진행되었습니다.</p>
+                                <h2><span>2013년 1회</span>헬무트 릴링과 함께하는 고음악 향연</h2>
+                                <p>순수 합창음악의 진수를 선보이는 '서울 모테트합창단'과 소트라노 마렐라 하겐, 바리톤 정록기, 메조 소프트라노 김선정, 테너 조성환이 출연하여 단방향의 클래식 공연을 넘어 다양한 형태로 관객과 함께하는 클래식 공연이 진행되었습니다.</p>
                             </div>
                         </div>
                         <div class="tab_content">
@@ -278,53 +293,61 @@
                     <h2 class="title common_title">이벤트</h2>
                 </div>
                 <div class="contents_wrap">
-                    <div class="content1">
-                        <img src="./imgs/event_img_1.png" alt="스타벅스 기프티콘" class="content_img">
-                        <div class="text_wrap">
-                            <dl>
-                                <dt>EVENT #1</dt>
-                                <dd>공연 소식받기 신청 이벤트</dd>
-                            </dl>
-                            <dl>
-                                <dt>이벤트 기간</dt>
-                                <dd>2020.11.00 - 11.00 / 당첨자 발표 11.00</dd>
-                            </dl>
-                            <dl>
-                                <dt>당첨자 선물</dt>
-                                <dd>스타벅스 아메리카노 기프티콘 100명 (1인 1개)</dd>
-                            </dl>
-                            <dl>
-                                <dt>참&nbsp;&nbsp;여&nbsp;&nbsp;방&nbsp;&nbsp;법</dt>
-                                <dd><span>한화클래식 홈페이지 상에서 휴대폰 번호를<br>남겨 알람받기를 신청해주세요!</span></dd>
-                            </dl>
-                            <button type="button">알람신청하기</button>
+                    <div class="content1 event_content">
+                        <div class="content_title">
+                            <span>EVENT #1</span>
+                            <span>공연 알림받기 신청 이벤트</span>
+                        </div>
+                        <div class="wrapper">
+                            <div class="content_img">
+                                <img src="./imgs/event_img_1.png" alt="스타벅스 기프티콘">
+                            </div>
+                            <div class="text_wrap">
+                                <dl>
+                                    <dt>이벤트 기간</dt>
+                                    <dd>2020.11.00 - 11.00 / 당첨자 발표 11.00</dd>
+                                </dl>
+                                <dl>
+                                    <dt>당첨자 선물</dt>
+                                    <dd>스타벅스 아메리카노 기프티콘 100명 (1인 1개)</dd>
+                                </dl>
+                                <dl>
+                                    <dt>참여방법</dt>
+                                    <dd>한화클래식 홈페이지 상에서 휴대폰 번호를<br>남겨 알람받기를 신청해주세요!</dd>
+                                </dl>
+                                <button type="button">알람신청하기</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="content2">
-                        <img src="./imgs/event_img_2.png" alt="기대평 이벤트" class="content_img">
-                        <div class="text_wrap">
-                            <dl>
-                                <dt>EVENT #2</dt>
-                                <dd>기대평 이벤트</dd>
-                            </dl>
-                            <dl>
-                                <dt>이벤트 기간</dt>
-                                <dd>2020.11.00 - 11.00 / 당첨자 발표 11.00</dd>
-                            </dl>
-                            <dl>
-                                <dt>당첨자 선물</dt>
-                                <dd>공연 초대권(총 5명, 1인 2매) or<br>임선혜 베스트앨범(총 30명, 1인 1매)</dd>
-                            </dl>
-                            <dl>
-                                <dt>참&nbsp;&nbsp;여&nbsp;&nbsp;방&nbsp;&nbsp;법</dt>
-                                <dd>
-                                    <p><span>하나, 한화데이즈 페이스북</span><br>게시물 좋아요와 댓글로 기대평을 남겨주세요!</p>
-                                    <p><span>둘, 한화데이즈 인스타그램</span><br>게시물에 댓글로 기대평을 남기고 친구를 태그해주세요!</p>
-                                </dd>
-                            </dl>
-                            <button type="button"><img src="./imgs/fb_logo.png" alt="페이스북">
-                                <span>한화데이즈 페이스북</span></button>
-                            <button type="button"><img src="./imgs/insta_logo.png" alt="인스타그램"><span>한화데이즈 인스타그램</span></button>
+                    <div class="content2 event_content">
+                        <div class="content_title">
+                            <span>EVENT #2</span>
+                            <span>기대평 이벤트</span>
+                        </div>
+                        <div class="wrapper">
+                            <div class="content_img">
+                                <img src="./imgs/event_img_2.png" alt="기대평 이벤트">
+                            </div>
+                            <div class="text_wrap">
+                                <dl>
+                                    <dt>이벤트 기간</dt>
+                                    <dd>2020.11.00 - 11.00 / 당첨자 발표 11.00</dd>
+                                </dl>
+                                <dl>
+                                    <dt>당첨자 선물</dt>
+                                    <dd>공연 초대권(총 5명, 1인 2매) or<br>임선혜 베스트앨범(총 30명, 1인 1매)</dd>
+                                </dl>
+                                <dl>
+                                    <dt>참여방법</dt>
+                                    <dd>
+                                        <p><b>하나, 한화데이즈 페이스북</b><br>게시물 좋아요와 댓글로 기대평을 남겨주세요!</p>
+                                        <p><b>둘, 한화데이즈 인스타그램</b><br>게시물에 댓글로 기대평을 남기고 친구를 태그해주세요!</p>
+                                    </dd>
+                                </dl>
+                                <button type="button"><img src="./imgs/fb_logo.png" alt="페이스북">
+                                    <span>한화데이즈 페이스북</span></button>
+                                <button type="button"><img src="./imgs/insta_logo.png" alt="인스타그램"><span>한화데이즈 인스타그램</span></button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -345,7 +368,17 @@
     </div>
     <script>
         $(function() {
-
+            $('.video_wrap iframe').css({
+                width: 100+'%',
+                height: $('.video_wrap').width()*9/16
+            })
+            $('.program_guide .program_guide_content').on('click', function(e) {
+                $(this).addClass('active');
+            });
+            $('.program_guide .program_guide_content .text_wrap .layer_close').on('click', function(e) {
+                e.stopPropagation();
+                $(this).closest('.program_guide_content').removeClass('active');
+            });
             /* 섹션6 탭 메뉴 스크립트 */
             $('.tab_link').click(function() {
                 var index = $(this).index();
