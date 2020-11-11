@@ -98,10 +98,14 @@
                 <div class="naver_contents">
                     <h3 class="naver_sub_title">네이버 온라인 생중계로 더욱 생생하게 바로크 음악을 만나보세요!</h3>
                     <p class="naver_notice">알림을 신청하시면, 공연 시작 전 생중계를 보실 수 있는 링크를 문자로 전송해 드립니다.</p>
-                    <form>
+                    <form onSubmit="return false;">
                         <input type="tel" placeholder="‘-’없이 휴대폰번호만 입력해주세요" class="naver_input">
                         <input type="submit" class="naver_submit" value="공연알림 신청하기">
-                        <label class="naver_personal_info"><input type="checkbox" name="개인정보 수집동의" value="개인정보 수집동의" class="chk-trigger">개인정보수집동의</label>
+                        <span class="input_chk">
+                           <input type="checkbox" name="" value="개인정보 수집동의" id="chk1" class="chk-trigger">
+                            <label class="naver_personal_info_label" for="chk1">개인정보수집동의</label>
+                        </span>
+                        <span class="naver_personal_info_alert">개인정보수집처리에 동의해주세요.</span>
                     </form>
                 </div>
             </div>
@@ -213,61 +217,57 @@
                         <button type="button" class="tab_link">3회</button>
                         <button type="button" class="tab_link">4회</button>
                         <button type="button" class="tab_link">5회</button>
-                        <button type="button" v class="tab_link">6회</button>
+                        <button type="button" class="tab_link">6회</button>
+                        <button type="button" class="tab_link">7회</button>
                     </div>
                     <div class="tab_contents">
                         <div class="tab_content active">
-                            <div class="img_wrap">
-                                <img src="./imgs/hanwha_classic_2013.png" alt="한화클래식 2013">
-                            </div>
+                            <div class="img_wrap" style="background-image: url(./imgs/hanwha_classic_2013.png)"></div>
                             <div class="text_wrap">
                                 <h2><span>2013년 1회</span><br>헬무트 릴링과 함께하는 고음악 향연</h2>
                                 <p>순수 합창음악의 진수를 선보이는 '서울 모테트합창단'과 소트라노 마렐라 하겐,<br>바리톤 정록기, 메조 소프트라노 김선정, 테너 조성환이 출연하여 단방향의<br>클래식 공연을 넘어 다양한 형태로 관객과 함께하는 클래식 공연이<br>진행되었습니다.</p>
                             </div>
                         </div>
                         <div class="tab_content">
-                            <div class="img_wrap">
-                                <img src="./imgs/hanwha_classic_2013.png" alt="한화클래식 2013">
-                            </div>
+                            <div class="img_wrap" style="background-image: url(./imgs/dum1.jpg)"></div>
                             <div class="text_wrap">
-                                <h2>2</h2>
-                                <p>2번째</p>
+                                <h2><span>2014년 2회</span><br>콘체르토 이탈리아노 최초 내한 공연</h2>
+                                <p>리날도 알레산드리니와 콘체르토 이탈리아노는 발표하는 음반마다 권위있는 각종 음악상을 휩쓸었다. 이탈리아 고음악 연구의 표준이 되고 있는 이들의 해석은 특히 몬테베르디와 비발디, 바흐, 스카를라티, 헨델 등에서 그 탁월함을 인정받고 있다. 내한무대에서는 이들의 대표작들을 선보인다.</p>
                             </div>
                         </div>
                         <div class="tab_content">
-                            <div class="img_wrap">
-                                <img src="./imgs/hanwha_classic_2013.png" alt="한화클래식 2013">
-                            </div>
+                            <div class="img_wrap" style="background-image: url(./imgs/dum2.jpg)"></div>
                             <div class="text_wrap">
-                                <h2>3</h2>
-                                <p>3번째</p>
+                                <h2><span>2015년 3회</span><br>콘체르토 이탈리아노 최초 내한 공연</h2>
+                                <p>리날도 알레산드리니와 콘체르토 이탈리아노는 발표하는 음반마다 권위있는 각종 음악상을 휩쓸었다. 이탈리아 고음악 연구의 표준이 되고 있는 이들의 해석은 특히 몬테베르디와 비발디, 바흐, 스카를라티, 헨델 등에서 그 탁월함을 인정받고 있다. 내한무대에서는 이들의 대표작들을 선보인다.</p>
                             </div>
                         </div>
                         <div class="tab_content">
-                            <div class="img_wrap">
-                                <img src="./imgs/hanwha_classic_2013.png" alt="한화클래식 2013">
-                            </div>
+                            <div class="img_wrap" style="background-image: url(./imgs/dum1.jpg)"></div>
                             <div class="text_wrap">
-                                <h2>4</h2>
-                                <p>4번째</p>
+                                <h2><span>2016년 4회</span><br>콘체르토 이탈리아노 최초 내한 공연</h2>
+                                <p>리날도 알레산드리니와 콘체르토 이탈리아노는 발표하는 음반마다 권위있는 각종 음악상을 휩쓸었다. 이탈리아 고음악 연구의 표준이 되고 있는 이들의 해석은 특히 몬테베르디와 비발디, 바흐, 스카를라티, 헨델 등에서 그 탁월함을 인정받고 있다. 내한무대에서는 이들의 대표작들을 선보인다.</p>
                             </div>
                         </div>
                         <div class="tab_content">
-                            <div class="img_wrap">
-                                <img src="./imgs/hanwha_classic_2013.png" alt="한화클래식 2013">
-                            </div>
+                            <div class="img_wrap" style="background-image: url(./imgs/dum2.jpg)"></div>
                             <div class="text_wrap">
-                                <h2>5</h2>
-                                <p>5번째</p>
+                                <h2><span>2017년 5회</span><br>콘체르토 이탈리아노 최초 내한 공연</h2>
+                                <p>리날도 알레산드리니와 콘체르토 이탈리아노는 발표하는 음반마다 권위있는 각종 음악상을 휩쓸었다. 이탈리아 고음악 연구의 표준이 되고 있는 이들의 해석은 특히 몬테베르디와 비발디, 바흐, 스카를라티, 헨델 등에서 그 탁월함을 인정받고 있다. 내한무대에서는 이들의 대표작들을 선보인다.</p>
                             </div>
                         </div>
                         <div class="tab_content">
-                            <div class="img_wrap">
-                                <img src="./imgs/hanwha_classic_2013.png" alt="한화클래식 2013">
-                            </div>
+                            <div class="img_wrap" style="background-image: url(./imgs/dum1.jpg)"></div>
                             <div class="text_wrap">
-                                <h2>6</h2>
-                                <p>6번째</p>
+                                <h2><span>2018년 6회</span><br>콘체르토 이탈리아노 최초 내한 공연</h2>
+                                <p>리날도 알레산드리니와 콘체르토 이탈리아노는 발표하는 음반마다 권위있는 각종 음악상을 휩쓸었다. 이탈리아 고음악 연구의 표준이 되고 있는 이들의 해석은 특히 몬테베르디와 비발디, 바흐, 스카를라티, 헨델 등에서 그 탁월함을 인정받고 있다. 내한무대에서는 이들의 대표작들을 선보인다.</p>
+                            </div>
+                        </div>
+                        <div class="tab_content">
+                            <div class="img_wrap" style="background-image: url(./imgs/dum1.jpg)"></div>
+                            <div class="text_wrap">
+                                <h2><span>2019년 7회</span><br>콘체르토 이탈리아노 최초 내한 공연</h2>
+                                <p>리날도 알레산드리니와 콘체르토 이탈리아노는 발표하는 음반마다 권위있는 각종 음악상을 휩쓸었다. 이탈리아 고음악 연구의 표준이 되고 있는 이들의 해석은 특히 몬테베르디와 비발디, 바흐, 스카를라티, 헨델 등에서 그 탁월함을 인정받고 있다. 내한무대에서는 이들의 대표작들을 선보인다.</p>
                             </div>
                         </div>
                     </div>
@@ -348,8 +348,16 @@
     </div>
     <script>
         $(function() {
+            
+            /* 네이버 개인정보수집동의 스크립트 */
+            
+            $(".naver_submit").click(function(){
+                if ($("#chk1").is(":checked") == false) {
+                    $(".naver_personal_info_alert").show();
+                }
+            })
 
-            /* 섹션6 탭 메뉴 스크립트 */
+            /* 지난 한화클래식 탭 메뉴 스크립트 */
             $('.tab_link').click(function() {
                 var index = $(this).index();
                 console.log(index);
@@ -363,5 +371,8 @@
                 $('.tab_content').eq(index).addClass('active');
             });
         })
+
     </script>
-</body></html>
+</body>
+
+</html>
