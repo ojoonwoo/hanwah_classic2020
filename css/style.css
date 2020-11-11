@@ -435,19 +435,24 @@ header {
     background-size: cover;
     background-color: #000;
 }
+
 .section4 .sec4_content {
     position: relative;
 }
+
 .section4 .sec4_content:hover:after {
     opacity: 1;
 }
+
 .contents_wrap .sec4_content .text_wrap {
     opacity: 0;
     transition: all 0.1s ease;
 }
+
 .contents_wrap .sec4_content:hover .text_wrap {
     opacity: 1;
 }
+
 .section4 .sec4_content:after {
     content: "";
     background-color: rgba(0, 0, 0, 0.6);
@@ -459,6 +464,7 @@ header {
     opacity: 0;
     transition: all 0.1s ease;
 }
+
 .section4 .contents2_first,
 .section4 .contents2_second {
     height: 434px;
@@ -800,4 +806,161 @@ header {
     letter-spacing: -0.025em;
     text-align: left;
     color: #020100;
+}
+
+/*========== 섹션7 ==========*/
+
+.section7 {
+    text-align: center;
+    padding: 190px 0 230px 0;
+}
+
+.section7 .sub_title {
+    color: #9b9b9b;
+    margin-bottom: 30px;
+}
+
+.section7 .title {
+    color: #e4793a;
+}
+
+.section7 .title_wrap {
+    margin-bottom: 130px;
+}
+
+.section7 .content_img {
+    width: 368px;
+    height: 368px;
+    border-radius: 5px;
+    border: solid 1px #dcdcdc;
+    float: left;
+    margin-right: 30px;
+    box-sizing: border-box;
+}
+
+.section7 .text_wrap {
+    float: left;
+    text-align: left;
+}
+
+.section7 .text_wrap dl {
+    margin-bottom: 14px;
+    font-size: 0;
+}
+
+.section7 .text_wrap dl:last-of-type {
+    margin-bottom: 28px;
+}
+
+.section7 .text_wrap dt,
+.section7 .text_wrap dd {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 1.8;
+}
+
+.section7 .text_wrap dt {
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: -0.025em;
+    color: #e4793a;
+    margin-right: 83px;
+}
+
+.section7 .text_wrap dl:first-of-type {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #c8c8c8;
+    margin-bottom: 44px;
+}
+
+.section7 .text_wrap dl:first-of-type dt {
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    color: #e4793a;
+    line-height: 1;
+    margin-right: 54px;
+}
+
+.section7 .text_wrap dl:last-child dt {
+    letter-spacing: -0.032em;
+}
+
+.section7 .text_wrap dd {
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: -0.025em;
+    color: #171616;
+}
+
+.section7 .text_wrap dl:first-of-type dd {
+    font-size: 35px;
+    font-weight: normal;
+    letter-spacing: -0.025em;
+    color: #020100;
+    line-height: 1;
+}
+
+.section7 .text_wrap span {
+    font-weight: 500;
+}
+
+.section7 .content1 {
+    margin-bottom: 130px;
+}
+
+.section7 .content1::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.section7 .content1 .text_wrap button {
+    width: 238px;
+    line-height: 79px;
+    border-radius: 5px;
+    background-color: #e4793a;
+    font-size: 25px;
+    font-weight: normal;
+    letter-spacing: -0.025em;
+    color: #ffffff;
+    margin-left: 200px;
+}
+
+.section7 .content2 .text_wrap p:first-of-type {
+    margin-bottom: 36px;
+}
+
+.section7 .content2 .text_wrap button {
+    margin-left: 200px;
+    width: 278px;
+    height: 79px;
+    border-radius: 5px;
+    background-color: #3f568e;
+    font-weight: normal;
+    font-size: 0;
+    color: #ffffff;
+}
+.section7 .content2 .text_wrap button span {
+    display: inline-block;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.section7 .content2 .text_wrap button:last-of-type {
+    margin-left: 12px;
+    background-color: #ec39ab;
+}
+
+.section7 .content2 .text_wrap button img {
+    width: 37px;
+    height: 37px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.section7 .content2::after {
+    content: "";
+    display: block;
+    clear: both;
 }

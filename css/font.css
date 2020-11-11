@@ -1,4 +1,4 @@
-/* @font-face {
+@font-face {
     font-family: 'Baloo Thambi Regular';
     font-style: normal;
     font-weight: normal;
@@ -52,8 +52,8 @@
 	font-weight: 900;
 	src: local("Noto Sans Black"), local("NotoSans-Black"), url(../fonts/NotoSansKR-Black.eot), url(../fonts/NotoSansKR-Black.eot?#iefix) format("embedded-opentype"), url(../fonts/NotoSansKR-Black.woff) format("woff");
 }
- */
- @font-face {
+
+@font-face {
 	font-family: 'Noto Sans Korean';
 	font-style: normal;
 	font-weight: 500;
