@@ -1,11 +1,16 @@
 * {
-    font-family: 'Noto Sans Korean', sans-serif;
-    letter-spacing: -0.025em;
+    box-sizing: border-box;
 }
 
+html, body {
+    font-family: 'Noto Sans Korean', sans-serif;
+    letter-spacing: -0.025em;
+    font-weight: 500;
+}
 button {
     border: 0;
     font-family: 'Noto Sans Korean', sans-serif;
+    letter-spacing: -0.025em;
     cursor: pointer;
 }
 
@@ -13,10 +18,12 @@ a {
     color: #fff;
     text-decoration: none;
 }
+img {
+    max-width: 100%;
+}
 
 .container {
-    min-width: 1280px;
-    overflow: hidden;
+    position: relative;
 }
 
 html body .common_sub_title {
@@ -30,84 +37,44 @@ html body .common_title {
 }
 
 /*========== 헤더 ==========*/
-header {
+.gnb {
     width: 100%;
-    height: 117px;
-    border-bottom: 1px solid #8a8a8a;
+    /* height: 64px; */
+    border-top: 1px solid #4f4f4f;
+    border-bottom: 1px solid #4f4f4f;
     background: #020100;
-    position: fixed;
-    left: 0;
+    position: sticky;
     top: 0;
     z-index: 999;
 }
 
-.inner {
-    width: 1200px;
-    margin: 0 auto;
+section .inner {
     padding: 0 15px;
-    box-sizing: border-box;
 }
 
-.manu ul {
+.menu ul {
+    font-size: 0;
+}
+
+.menu li {
     text-align: center;
-}
-
-.manu li {
-    font-size: 20px;
-    font-weight: 300;
-    color: #ffffff;
-    padding: 0 8px;
     display: inline-block;
-    line-height: 117px;
+    width: 20%;
 }
-
-.manu ul::after {
+.menu li a {
     display: block;
-    content: "";
-    clear: both;
-}
-
-.event_btn {
-    position: fixed;
-    top: 695px;
-    right: 110px;
-    z-index: 999;
-    width: 172px;
-    height: 172px;
-    border-radius: 50%;
-    background-color: #e4793a;
-}
-
-.event_btn p {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: normal;
-    text-align: center;
+    padding: 20px 0;
+    font-size: 11px;
+    line-height: 1.3;
     color: #ffffff;
-}
-
-.event_btn p:first-of-type::after {
-    content: "";
-    display: block;
-    margin: 11px auto 15px auto;
-    clear: both;
-    width: 56px;
-    height: 1px;
-    background-color: #fff;
 }
 
 /*========== 섹션1 banner ==========*/
 
 .banner {
     width: 100%;
-    height: 929px;
-    box-sizing: border-box;
-    padding-top: 179px;
-    box-sizing: border-box;
-    background-image: url(../imgs/BG.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    padding: 75px 0 203px;
+    background: url(../imgs/BG.png) 50% 100% / 98% auto no-repeat #020100; 
 }
 
 .banner .wrapper {
@@ -115,245 +82,202 @@ header {
 }
 
 .banner .logo {
-    width: 413px;
-    height: 110px;
-    display: inline-block;
-    margin-bottom: 35px;
+    display: block;
+    margin: 0 auto 16px;
 }
 
 .banner .logo img {
-    width: 100%;
+    height: 50px;
+    width: auto;
 }
 
 .title_wrap h2 {
-    font-size: 28px;
+    font-size: 13px;
     font-weight: normal;
     color: #f3f3f3;
-    margin-bottom: 48px;
+    margin-bottom: 22px;
 }
 
 .button_wrap button {
-    width: 228px;
-    height: 60px;
-    border-radius: 5px;
+    width: 114px;
+    height: 30px;
+    border-radius: 3px;
     background-color: #e4793a;
+    color: #ffffff;
+    font-size: 11px;
 }
 
-.button_wrap button p {
-    font-size: 23px;
-    font-weight: normal;
-    color: #ffffff;
-}
 
 /*========== 섹션2  hanwha classic 2020 ==========*/
 
 .hanwha_classic_2020 {
     background-color: #191919;
-    padding: 169px 0 157px 0;
-    box-sizing: border-box;
+    padding: 57px 0 75px;
 }
 
 .hanwha_classic_2020 .title_warp {
     text-align: center;
-    margin-bottom: 84px;
+    margin-bottom: 27px;
 }
 
 .hanwha_classic_2020 .sub_title {
     border: 1px solid #e4793a;
-    box-sizing: border-box;
     display: inline-block;
     margin-bottom: 15px;
 }
 
 .hanwha_classic_2020 .sub_title h3 {
-    font-size: 18px;
-    font-weight: 300;
+    font-size: 10px;
+    font-weight: 700;
     color: #e4793a;
-    padding: 12px 25px;
+    padding: 6px 10px;
 }
 
 .hanwha_classic_2020 .title img {
-    width: 379px;
+    width: auto;
+    height: 26px;
 }
 
 .hanwha_classic_2020 .contents1 {
-    height: 595px;
     border-bottom: 1px solid #5d5d5d;
-    box-sizing: border-box;
+    padding-bottom: 50px;   
 }
-
-.hanwha_classic_2020 .contents1_left {
-    width: 600px;
-    float: left;
+.hanwha_classic_2020 .contents1 .text-wrap {
+    margin-top: 24px;
+    text-align: center;
+    font-size: 0;
 }
-
-.hanwha_classic_2020 .contents1_left {
-    padding-top: 150px;
+.hanwha_classic_2020 .contents1_title {
+    display: block;
+    width: 233px;
+    margin: 0 auto 23px;
 }
-
-.hanwha_classic_2020 .contents1_left .contents1_subTitle {
-    font-size: 25px;
-    font-weight: 500;
-    color: #ffffff;
-    line-height: 1.4;
-    margin-bottom: 29px;
-}
-
-.hanwha_classic_2020 .contents1_left .contents1_title {
+.hanwha_classic_2020 .contents1 .text-wrap .text {
     display: inline-block;
-    margin-bottom: 70px;
-}
-
-.hanwha_classic_2020 .contents1_left .text {
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 1.75;
+    font-size: 12px;
+    font-weight: 400;
     color: #ffffff;
+    line-height: 1.6;
+    text-align: left;
 }
 
-.hanwha_classic_2020 .contents1_right {
-    width: 570px;
-    height: 490px;
-    background-image: url(../imgs/section2_img.png);
-    background-position: center center;
-    border-image-repeat: repeat;
-    background-size: cover;
-    float: right;
-}
+
 
 .hanwha_classic_2020 .contents2 {
-    padding-top: 118px;
+    padding-top: 50px;
+    font-size: 0;
+    text-align: center;
 }
-
-.hanwha_classic_2020 .contents2 .contents2_left {
-    width: 404px;
-    float: left;
+.hanwha_classic_2020 .contents2 .logo {
+    display: inline-block;
+    height: 37px;
+    width: auto;
+    margin: 0 auto 21px;
 }
-
-.hanwha_classic_2020 .contents2 .contents2_left img {
-    width: 280px;
-}
-
-.hanwha_classic_2020 .contents2 .contents2_right {
-    width: 766px;
-    float: right;
-}
-
-.hanwha_classic_2020 .contents2_title {
-    font-size: 30px;
-    font-weight: normal;
-    line-height: 1.67;
-    text-align: left;
+.hanwha_classic_2020 .contents2 .contents2_title {
+    font-size: 17px;
+    line-height: 1.47;
     color: #ffffff;
-    margin-bottom: 52px;
+    font-weight: 500;
+    margin-bottom: 34px;
 }
-
-.hanwha_classic_2020 .contents2_text {
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 1.75;
+.hanwha_classic_2020 .contents2 .contents2_text {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #ffffff;
+    text-align: left;
     letter-spacing: -0.05em;
-    word-break: keep-all;
-    text-align: left;
-    color: #ffffff;
 }
 
-.hanwha_classic_2020 .contents2::after {
-    display: block;
-    content: "";
-    clear: both;
-}
+
 
 /*========== 섹션3 naver_wrap ==========*/
 
 .naver_wrap {
-    padding: 183px 0 190px 0;
-    box-sizing: border-box;
+    padding: 57px 0 75px;
+    text-align: center;
 }
 
 .naver_wrap .naver_title_wrap {
-    float: left;
-    width: 398px;
+    /* width: 398px; */
+    padding-bottom: 20px;
+    border-bottom: 1px solid #cccccc;
 }
 
 .naver_wrap .naver_logo {
-    margin-bottom: 29px;
+    display: block;
+    width: 35px;
+    height: auto;
+    margin: 0 auto 12px;
 }
 
 .naver_wrap .naver_title {
-    font-size: 35px;
-    font-weight: 300;
-    line-height: 1.29;
-    color: #171616;
+    font-size: 19px;
+    font-weight: 700;
+    color: #e4793a;
 }
 
 .naver_wrap .naver_title span {
     font-weight: 500;
 }
 
-.naver_wrap .naver_contents {
-    float: left;
-    width: 772px;
-}
-
 .naver_wrap .naver_sub_title {
-    font-size: 28px;
-    font-weight: 500;
-    line-height: 1.61;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.4;
     color: #171616;
-    padding-bottom: 44px;
-    border-bottom: 1px solid #b7b7b7;
-    margin-bottom: 40px;
+    padding-top: 16px;
+    margin-bottom: 18px;
 }
 
 .naver_wrap .naver_notice {
-    font-size: 23px;
-    font-weight: 300;
-    line-height: 1.96;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: -0.05em;
     color: #525252;
-    margin-bottom: 30px;
+    margin-bottom: 23px;
 }
 
+.naver_wrap .form-wrap {
+    padding: 0 10px;
+}
 .naver_wrap .naver_input {
-    width: 511px;
-    height: 79px;
+    width: 100%;
+    height: 40px;
     padding: 0 22px;
-    line-height: 79px;
-    border: solid 3px #e4793a;
+    text-align: center;
+    border: 2px solid #e4793a;
     background-color: #ffffff;
-    font-size: 20px;
-    font-weight: 300;
+    font-size: 14px;
+    font-weight: 400;
     color: #868686;
-    margin-right: 20px;
-    box-sizing: border-box;
-    float: left;
+    margin-bottom: 13px;
 }
 
 .naver_wrap .naver_submit {
-    width: 238px;
-    height: 79px;
-    line-height: 79px;
+    width: 100%;
+    height: 45px;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 3px;
     border: 0;
     background-color: #e4793a;
-    font-size: 25px;
-    font-weight: normal;
+    font-size: 14px;
+    font-weight: 500;
     color: #ffffff;
-    margin-bottom: 23px;
-    cursor: pointer;
+    margin-top: 15px;
 }
 
 .naver_wrap .naver_personal_info {
     position: relative;
-    padding-left: 34px;
-    line-height: 26px;
-    font-size: 20px;
+    font-size: 12px;
     font-weight: 300;
     color: #757575;
 }
 
-.naver_wrap .naver_personal_info input {
+.naver_wrap .agree-wrap .chk-trigger {
     position: absolute;
     overflow: hidden;
     margin: -1px;
@@ -365,21 +289,21 @@ header {
     background-image: url(../imgs/check_off.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
-    width: 26px;
-    height: 26px;
+    background-size: cover;
+    width: 12px;
+    height: 12px;
     content: '';
     display: block;
-    clear: both;
     position: absolute;
+    left: -17px;
+    top: 4px;
     z-index: 1;
 }
 
 .naver_wrap .naver_personal_info::after {
     content: "";
     display: block;
-    clear: both;
-    width: 140px;
+    width: 100%;
     height: 1px;
     background-color: #757575;
     position: absolute;
@@ -391,7 +315,6 @@ header {
 .naver_wrap .naver_contents::after {
     content: "";
     display: block;
-    clear: both;
     margin-top: 36px;
     width: 100%;
     height: 149px;
@@ -401,11 +324,6 @@ header {
     background-size: cover;
 }
 
-.naver_wrap .inner::after {
-    content: "";
-    display: block;
-    clear: both;
-}
 
 /*========== 섹션4 program_guide ==========*/
 
@@ -442,7 +360,7 @@ header {
 
 .program_guide .contents1,
 .program_guide .contents2 {
-    width: 570px;
+    /* width: 570px; */
     height: 897px;
     float: left;
 }
@@ -560,7 +478,7 @@ header {
     font-weight: 300;
     margin-right: 89px;
     line-height: 1.5;
-    float: left;
+    /* float: left; */
 }
 
 .program_guide .schedule_wrap dd {
@@ -586,8 +504,8 @@ header {
 }
 
 .program_guide .schedule_wrap li {
-    width: 570px;
-    float: left;
+    /* width: 570px; */
+    /* float: left; */
 }
 
 .program_guide .schedule_wrap li:first-of-type {
@@ -662,18 +580,18 @@ header {
     line-height: normal;
     color: #ffffff;
     text-align: left;
-    display: table-cell;
+    /* display: table-cell; */
     vertical-align: middle;
     padding-right: 78px;
 }
 
 .program_guide .ticket_wrap button {
-    width: 318px;
+    /* width: 318px; */
     height: 90px;
     border: 0;
     border-radius: 5px;
     background-color: #e4793a;
-    display: table-cell;
+    /* display: table-cell; */
     vertical-align: text-bottom;
     font-size: 25px;
     font-weight: normal;
@@ -778,7 +696,7 @@ header {
 
 .past_hanwha_classic .tab_content .img_wrap,
 .past_hanwha_classic .tab_content .text_wrap {
-    width: 570px;
+    /* width: 570px; */
     position: absolute;
 }
 
@@ -789,7 +707,7 @@ header {
 
 .past_hanwha_classic .tab_content .text_wrap {
     box-sizing: border-box;
-    left: 600px;
+    /* left: 600px; */
     bottom: 1px;
 
 }
@@ -837,7 +755,7 @@ header {
 }
 
 .event .content_img {
-    width: 368px;
+    /* width: 368px; */
     height: 368px;
     border-radius: 5px;
     float: left;
@@ -850,7 +768,7 @@ header {
 }
 
 .event .text_wrap {
-    float: left;
+    /* float: left; */
     text-align: left;
     font-size: 0;
 }
@@ -924,7 +842,7 @@ header {
 }
 
 .event .content1 .text_wrap button {
-    width: 238px;
+    /* width: 238px; */
     line-height: 79px;
     border-radius: 5px;
     background-color: #e4793a;
@@ -939,7 +857,7 @@ header {
 }
 
 .event .content2 .text_wrap button {
-    width: 278px;
+    /* width: 278px; */
     height: 79px;
     border-radius: 5px;
     background-color: #3f568e;
