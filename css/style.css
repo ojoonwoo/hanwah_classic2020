@@ -7,8 +7,8 @@ button {
     border: 0;
     font-family: 'Noto Sans Korean', sans-serif;
     cursor: pointer;
+    outline: 0 none;
 }
-
 a {
     color: #fff;
     text-decoration: none;
@@ -56,7 +56,7 @@ header {
     font-size: 20px;
     font-weight: 300;
     color: #ffffff;
-    padding: 0 8px;
+    padding: 0 30px;
     display: inline-block;
     line-height: 117px;
 }
@@ -129,7 +129,7 @@ header {
     font-size: 28px;
     font-weight: normal;
     color: #f3f3f3;
-    margin-bottom: 48px;
+    margin-bottom: 40px;
 }
 
 .button_wrap button {
@@ -177,18 +177,17 @@ header {
 }
 
 .hanwha_classic_2020 .contents1 {
-    height: 595px;
     border-bottom: 1px solid #5d5d5d;
     box-sizing: border-box;
+    position: relative;
+    padding: 0 0 102px 600px;
 }
 
 .hanwha_classic_2020 .contents1_left {
     width: 600px;
-    float: left;
-}
-
-.hanwha_classic_2020 .contents1_left {
-    padding-top: 150px;
+    left: 0;
+    bottom: 125px;
+    position: absolute;
 }
 
 .hanwha_classic_2020 .contents1_left .contents1_subTitle {
@@ -218,7 +217,6 @@ header {
     background-position: center center;
     border-image-repeat: repeat;
     background-size: cover;
-    float: right;
 }
 
 .hanwha_classic_2020 .contents2 {
@@ -309,9 +307,9 @@ header {
 .naver_wrap .naver_notice {
     font-size: 23px;
     font-weight: 300;
-    line-height: 1.96;
     color: #525252;
     margin-bottom: 30px;
+    letter-spacing: -0.05em;
 }
 
 .naver_wrap .naver_input {
@@ -344,16 +342,18 @@ header {
     cursor: pointer;
 }
 
-.naver_wrap .naver_personal_info {
+.naver_wrap .naver_personal_info_label {
     position: relative;
     padding-left: 34px;
     line-height: 26px;
     font-size: 20px;
     font-weight: 300;
     color: #757575;
+    user-select: none;
+    cursor: pointer;
 }
 
-.naver_wrap .naver_personal_info input {
+.naver_wrap .chk-trigger {
     position: absolute;
     overflow: hidden;
     margin: -1px;
@@ -361,7 +361,7 @@ header {
     height: 1px;
 }
 
-.naver_wrap .naver_personal_info::before {
+.naver_wrap .naver_contents .input_chk label::before {
     background-image: url(../imgs/check_off.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -375,7 +375,14 @@ header {
     z-index: 1;
 }
 
-.naver_wrap .naver_personal_info::after {
+.naver_wrap .naver_contents .input_chk input:checked+label::before {
+    background-image: url(../imgs/check_on.png);
+    content: '';
+    width: 26px;
+    height: 26px;
+}
+
+.naver_wrap .naver_personal_info_label::after {
     content: "";
     display: block;
     clear: both;
@@ -386,6 +393,12 @@ header {
     right: 1px;
     bottom: 0;
     z-index: 1;
+}
+
+.naver_personal_info_alert {
+    margin-left: 8px;
+    color: red;
+    display: none;
 }
 
 .naver_wrap .naver_contents::after {
@@ -615,8 +628,8 @@ header {
 }
 
 .program_guide .playlist_wrap {
-    padding: 30px 0;
-    height: 221px;
+    padding: 20px 0;
+    height: 198px;
     box-sizing: border-box;
     border-bottom: 1px solid #717171;
     margin-bottom: 32px;
@@ -683,7 +696,7 @@ header {
 /*========== 섹션5 ==========*/
 
 .introduce {
-    padding: 153px 0 192px 0;
+    padding: 154px 0 192px 0;
     box-sizing: border-box;
 }
 
@@ -708,9 +721,8 @@ header {
 /*========== 섹션6 past_hanwha_classic ==========*/
 
 .past_hanwha_classic {
-    padding-top: 194px;
+    padding: 194px 0 240px 0;
     background-color: #f2f3f4;
-    height: 1073px;
     box-sizing: border-box;
 }
 
@@ -755,6 +767,7 @@ header {
     margin: 0 2.5px;
 }
 
+.past_hanwha_classic .tab_link:hover,
 .past_hanwha_classic .tab_link.active {
     background-color: #e4793a;
     color: #fff;
@@ -762,6 +775,7 @@ header {
 
 .past_hanwha_classic .tab_contents {
     position: relative;
+    height: 357px;
 }
 
 .past_hanwha_classic .tab_content {
@@ -785,6 +799,10 @@ header {
 .past_hanwha_classic .tab_content .img_wrap {
     left: 0;
     top: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 357px;
 }
 
 .past_hanwha_classic .tab_content .text_wrap {
@@ -860,8 +878,12 @@ header {
     font-size: 0;
 }
 
+.event .text_wrap dl:nth-of-type(3) {
+    margin-bottom: 18px;
+}
+
 .event .text_wrap dl:last-of-type {
-    margin-bottom: 28px;
+    margin-bottom: 26px;
 }
 
 .event .text_wrap dt,
@@ -881,7 +903,7 @@ header {
 .event .text_wrap dl:first-of-type {
     padding-bottom: 30px;
     border-bottom: 1px solid #c8c8c8;
-    margin-bottom: 44px;
+    margin-bottom: 38px;
 }
 
 .event .text_wrap dl:first-of-type dt {
@@ -935,7 +957,7 @@ header {
 }
 
 .event .content2 .text_wrap p:first-of-type {
-    margin-bottom: 36px;
+    margin-bottom: 32px;
 }
 
 .event .content2 .text_wrap button {
