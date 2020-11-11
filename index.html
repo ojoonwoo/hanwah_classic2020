@@ -360,8 +360,9 @@
             /* 지난 한화클래식 탭 메뉴 스크립트 */
             $('.tab_link').click(function() {
                 var index = $(this).index();
-                console.log(index);
-
+                if(index == $('.tab_link.active').index()) {
+                    return;
+                }
                 /* 탭 메뉴 활성화 스크립트 */
                 $('.tab_link').removeClass('active');
                 $(this).addClass('active');

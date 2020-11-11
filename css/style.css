@@ -5,10 +5,10 @@
 
 button {
     border: 0;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Noto Sans Korean', sans-serif;
     cursor: pointer;
+    outline: 0 none;
 }
-
 a {
     color: #fff;
     text-decoration: none;
