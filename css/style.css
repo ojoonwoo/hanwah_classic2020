@@ -162,7 +162,7 @@ header {
 
 .hanwha_classic_2020 .title_warp {
     text-align: center;
-    margin-bottom: 84px;
+    margin-bottom: 80px;
 }
 
 .hanwha_classic_2020 .sub_title {
@@ -190,14 +190,14 @@ header {
 .hanwha_classic_2020 .contents1_left .contents1_subTitle {
     font-size: 25px;
     font-weight: 500;
-    color: #ffffff;
+    color: #e4793a;
     line-height: 1.4;
     margin-bottom: 29px;
 }
 
 .hanwha_classic_2020 .contents1_left .contents1_title {
     display: inline-block;
-    margin-bottom: 70px;
+    margin-bottom: 57px;
 }
 
 .hanwha_classic_2020 .contents1_left .text {
@@ -427,6 +427,7 @@ header {
 
 .program_guide .title_wrap {
     text-align: center;
+    margin-bottom: 82px;
 }
 
 .program_guide .title_wrap .sub_title {
@@ -435,6 +436,7 @@ header {
 
 .program_guide .title_wrap .title {
     color: #e4793a;
+    margin-bottom: 35px;
 }
 
 .program_guide .title_wrap .text {
@@ -442,7 +444,6 @@ header {
     font-weight: 300;
     line-height: 1.75;
     color: #ffffff;
-    margin-bottom: 82px;
 }
 
 .program_guide .contents_wrap {
