@@ -12,7 +12,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- jquery -->
-    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../lib/jquery/jquery-3.5.1.min.js"></script>
+    <script src="../lib/waypoints/jquery.waypoints.min.js"></script>
 </head>
 
 <body>
@@ -34,28 +35,28 @@
                 </div>
             </div>
         </section>
-        <div class="gnb">
+        <div class="gnb" id="gnb">
             <nav class="menu">
                 <ul>
                     <li>
-                        <a href="#">한화클래식<br/>2020</a>
+                        <a href="javascript:void(0)" class="gnb-link" data-dest="#section1">한화클래식<br/>2020</a>
                     </li>
                     <li>
-                        <a href="#">공연<br/>프로그램</a>
+                        <a href="javascript:void(0)" class="gnb-link" data-dest="#section3">공연<br/>프로그램</a>
                     </li>
                     <li>
-                        <a href="#">공연<br/>소개영상</a>
+                        <a href="javascript:void(0)" class="gnb-link" data-dest="#section4">공연<br/>소개영상</a>
                     </li>
                     <li>
-                        <a href="#">지난<br/>한화클래식</a>
+                        <a href="javascript:void(0)" class="gnb-link" data-dest="#section5">지난<br/>한화클래식</a>
                     </li>
                     <li>
-                        <a href="#">알람신청<br/>이벤트!</a>
+                        <a href="javascript:void(0)" class="gnb-link fix-color" data-dest="#section6">알람신청<br/>이벤트!</a>
                     </li>
                 </ul>
             </nav>
         </div>
-        <section class="hanwha_classic_2020">
+        <section class="hanwha_classic_2020" id="section1">
             <div class="inner">
                 <div class="title_warp">
                     <div class="sub_title">
@@ -81,7 +82,7 @@
                 </div>
             </div>
         </section>
-        <section class="naver_wrap">
+        <section class="naver_wrap" id="section2">
             <div class="inner">
                 <div class="naver_title_wrap">
                     <img src="./imgs/naver_object.png" alt="네이버 라이브" class="naver_logo">
@@ -104,7 +105,7 @@
                 </div>
             </div>
         </section>
-        <section class="program_guide">
+        <section class="program_guide" id="section3">
             <div class="inner">
                 <div class="title_wrap">
                     <h3 class="sub_title common_sub_title">Program Guide</h3>
@@ -198,7 +199,7 @@
                 </div>
             </div>
         </section>
-        <section class="introduce">
+        <section class="introduce" id="section4">
             <div class="inner">
                 <div class="title_wrap">
                     <h3 class="sub_title common_subTitle">Introduce</h3>
@@ -210,7 +211,7 @@
                 </div>
             </div>
         </section>
-        <section class="section6 past_hanwha_classic">
+        <section class="section6 past_hanwha_classic" id="section5">
             <div class="inner">
                 <div class="title_wrap">
                     <h3 class="sub_title common_sub_title">Past Hanwha Classic</h3>
@@ -286,7 +287,7 @@
                 </div>
             </div>
         </section>
-        <section class="section7 event">
+        <section class="section7 event" id="section6">
             <div class="inner">
                 <div class="title_wrap">
                     <h3 class="sub_title common_subTitle">Event</h3>
@@ -391,6 +392,50 @@
                 /* 탭 컨텐츠 활성화 스크립트 */
                 $('.tab_content').removeClass('active');
                 $('.tab_content').eq(index).addClass('active');
+            });
+            // 하단 네비 스크롤에 따라 상태 변경
+            var gnbActive = function() {
+                var gnbLinks = new Array();
+                return {
+                    init: function() {
+                        if (!$('html').is(':animated')) {
+                            $('.gnb-link')
+                            .not('.anchorNone')
+                            .each(function(i) {
+                                var dest = $(this).attr('data-dest');
+                                var firstString = dest.substr(0, 1);
+                                if (firstString == '#' && dest.length > 1) {
+                                    gnbLinks[i] = dest;
+                                }
+                            });
+                            if (!gnbLinks.length) {
+                                return;
+                            }
+                            for (var i = 0; i < gnbLinks.length; i++) {
+                                if (
+                                    $(window).scrollTop() >= $(gnbLinks[i]).offset().top - $('#gnb').outerHeight()
+                                ) {
+                                    $('.gnb-link').removeClass('is-active');
+                                    $('.gnb-link').eq(i).addClass('is-active');
+                                }
+                            }
+                            if (
+                                $(window).scrollTop() < $(gnbLinks[0]).offset().top - $('#gnb').outerHeight()
+                            ) {
+                                $('.gnb-link').removeClass('is-active');
+                            }
+                        }
+                    }
+                };
+            }();
+
+            $(window).on({
+                'load': function() {
+                    gnbActive.init();
+                },
+                'scroll': function() {
+                    gnbActive.init();
+                }
             });
         })
     </script>

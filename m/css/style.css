@@ -883,3 +883,17 @@ footer ul li:first-of-type::after {
     vertical-align: middle;
     margin: 0 15px;
 }
+
+
+
+/* for js */
+.gnb-link.is-active {
+    color: #e4793a;
+}
+.gnb-link.fix-color {
+    background-color: #e4793a;
+}
+.gnb-link.fix-color.is-active {
+    color: #ffffff;
+}
+/* end for js */
