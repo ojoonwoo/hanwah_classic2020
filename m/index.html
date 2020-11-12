@@ -30,10 +30,14 @@
                     </div>
                     <div class="button_wrap">
                         <button type="button">자세히보기</button>
+                        <!-- 라이브 시점 주석 해제 필요 -->
+
                         <!-- <a href="#" class="live-element"><span>라이브 공연보기</span></a> -->
-                        <a href="#" class="fixed_circle">
+                        <!-- <a href="#" class="fixed_circle">
                             <img src="./imgs/fixed_circle.png" alt="라이브 공연보기">
-                        </a>
+                        </a> -->
+
+                        <!-- 라이브 시점 주석 해제 필요 -->
                     </div>
                 </div>
             </div>
@@ -98,7 +102,7 @@
                         <div class="form-wrap">
                             <input type="tel" placeholder="‘-’없이 휴대폰번호만 입력해주세요" class="naver_input">
                             <div class="agree-wrap">
-                                <input type="checkbox" name="" value="개인정보 수집동의" id="chk1" class="chk-trigger">
+                                <input type="checkbox" name="" value="개인정보 수집동의" id="chk1" class="chk-trigger" data-layer-open="#agree-layer">
                                 <label class="naver_personal_info" for="chk1">개인정보수집동의</label>
                             </div>
                             <input type="submit" class="naver_submit" value="공연알림 신청하기">
@@ -152,18 +156,18 @@
                 <div class="schedule_wrap">
                     <div class="top-wrap waypoints">
                         <dl>
-                            <dt>일&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;정</dt>
+                            <dt>일&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;정</dt>
                             <dd>총 2회 공연 / 공연시간 70분 - 인터미션 없음<br>
                                 <span>2020.12.12.SAT 5:00 PM / 12.16.WED 7:30 PM</span>
                             </dd>
                         </dl>
                         <dl>
                             <dt>
-                                장&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소</dt>
+                                장&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소</dt>
                             <dd>예술의전당 콘서트홀(서울)</dd>
                         </dl>
                         <dl>
-                            <dt>출&nbsp;&nbsp;&nbsp;연&nbsp;&nbsp;&nbsp;진</dt>
+                            <dt>출연진</dt>
                             <dd>소프라노 임선혜, 지휘/리코더 권민석,<br/>리코더 정윤태, 바리톤 김기훈 등<br>한화 바로크 프로젝트 (악장/바이올린 김나연)</dd>
                         </dl>
                     </div>
@@ -178,7 +182,7 @@
                                     &lt;이제 사라져라, 슬픔의 그림자여&gt;, BWV 202
                                 </p>
                             </div>
-                            <p class="text">바로크 시대를 대표하는 거장 요한 세바스찬 바흐의 대표적인 작품들로 구성된<br>첫날 공연은 &lt;관현악 모음곡&gt;을 시작으로 &lt;브란덴부르크 협주곡&gt;과 일명<br>‘결혼칸타타’라 불리는 &lt;이제 사라져라, 슬픔의 그림자여&gt;를 선보입니다.</p>
+                            <p class="text">바로크 시대를 대표하는 거장 요한 세바스찬 바흐의 대표적인 작품들로 구성된 첫날 공연은 &lt;관현악 모음곡&gt;을 시작으로 &lt;브란덴부르크 협주곡&gt;과 일명 ‘결혼칸타타’라 불리는 &lt;이제 사라져라, 슬픔의 그림자여&gt;를 선보입니다.</p>
                         </li>
                         <li class="waypoints" data-waypoints-delay="200">
                             <div class="title_wrap">
@@ -188,7 +192,7 @@
                             <div class="playlist_wrap">
                                 <p><span>지오반니 페르골레지 (G. B. Pergolesi)</span><br>오페라 &lt;마님이 된 하녀&gt;</p>
                             </div>
-                            <p class="text">페르골레시의 &lt;마님이 된 하녀&gt;는 총 2막으로 구성된 50여 분 가량의 짧은<br>희극오페라입니다. 희극오페라의 중요한 시초인 페르골레시의 대표적인 오페라<br>중 하나로 코믹한 내용과 아름다운 선율이 돋보이는 작품입니다.</p>
+                            <p class="text">페르골레시의 &lt;마님이 된 하녀&gt;는 총 2막으로 구성된 50여 분 가량의 짧은 희극오페라입니다. 희극오페라의 중요한 시초인 페르골레시의 대표적인 오페라 중 하나로 코믹한 내용과 아름다운 선율이 돋보이는 작품입니다.</p>
                         </li>
                     </ul>
                 </div>
@@ -209,8 +213,7 @@
                     <h2 class="title common_title">공연 소개 영상</h2>
                 </div>
                 <div class="video_wrap waypoints">
-                    <!-- <iframe src='https://tv.naver.com/embed/8731791?autoPlay=true' frameborder='no' scrolling='no' marginwidth='0' marginheight='0' style="width: 100%; height: auto;" allow='autoplay' allowfullscreen></iframe> -->
-                    <iframe src='https://tv.naver.com/embed/8731791?autoPlay=true' frameborder='no' scrolling='no' marginwidth='0' marginheight='0' allow='autoplay' allowfullscreen></iframe>
+                    <iframe style="width: 100%; height: auto;" src="https://www.youtube.com/embed/hYVzXIT_yJw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </section>
@@ -303,7 +306,7 @@
         <section class="section7 event" id="section6">
             <div class="inner">
                 <div class="title_wrap waypoints">
-                    <h3 class="sub_title common_subTitle">Event</h3>
+                    <h3 class="sub_title common_subTitle">EVENT</h3>
                     <h2 class="title common_title">이벤트</h2>
                 </div>
                 <div class="contents_wrap">
@@ -380,23 +383,60 @@
             </ul>
         </footer>
     </div>
+    <div class="layer-container">
+        <div class="layer-popup" id="agree-layer">
+            <div class="inner">
+                <button type="button" class="layer-close"><span class="for-a11y">닫기</span></button>
+                <div class="title">한화클래식 2020 공연 알림 서비스 및<br/>이벤트를 위한 개인정보 수집·이용 동의서</div>
+                <div class="block block_1">
+                    <p class="normal-text">
+                        한화, ㈜한컴, ㈜큐스컴, ㈜제이에스바흐는 더 나은 서비스를 제공하고자 한화클래식 2020 공연의 실시간 알림 서비스/이벤트 제공을 위하여 아래와<br/>같이 개인정보를 수집/이용/제공하는 내용을『개인정보보호법』,『신용정보의 이용 및 보호에 관한 법률』및『정보통신망 이용 촉진 및 정보보호 등에 관한 법률』등에 따라 고지하오니 내용을 자세히 읽어보신 후 동의하여 주시기 바랍니다.
+                    </p>
+                </div>
+                <div class="block block_2">
+                    <p class="bold-text">○ 최소한의 정보 처리 및 동의거부에 관한 안내</p>
+                    <p class="normal-text">- 정보 동의 시 목적달성에 부합하는 최소한의 정보만 수집 및 이용하며, 동의하지 않는 경우 알림 서비스 제공 및 이벤트의 참여가 제한될 수 있습니다.</p>
+                    <p class="bold-text">○ 개인정보 수집·이용 방법</p>
+                    <p class="normal-text">- 휴대전화번호</p>
+                    <p class="bold-text">○ 개인정보 수집·이용 목적</p>
+                    <p class="normal-text">
+                        - 수집된 개인정보는 행사에 따른 통계자료만을 위해 사용됩니다.<br/>
+                        - 수집한 개인정보는 본 수집· 이용 목적 외에 다른 목적으로 사용되지 않습니다.<br/>
+                        - 수집된 개인정보는 행사 통계자료 구성을 위해 한화, ㈜한컴, ㈜큐스컴, ㈜제이에스바흐에게 제공됩니다
+                    </p>
+                    <p class="bold-text">○ 개인정보 보유·이용 기간</p>
+                    <p class="normal-text">
+                        - 한화클래식 2020 공연 알림를 위해 보내주신 정보는 목적이 달성된 후<br/>배송과 관련된 민원 및 문의를 위한 일정기간(1년) 저장 후 파기합니다.<br/>일정기간(1년) 저장된 개인정보는 법률에 의한 경우가 아니고서는 보유 이외의<br/>다른 목적으로는 이용하지 않습니다.
+                    </p>
+                    <p class="bold-text">○ 개인정보 제공동의 철회</p>
+                    <p class="normal-text">
+                        - 개인정보 제공 및 이용에 동의한 이후에도 메일을 통해 개인정보의<br/>제공동의를 언제든지 철회할 수 있습니다.<br/>email@email.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
     <script>
+        var paramObj, paramValArr;
+
         $(function() {
+            paramObj = get_query();
+            paramValArr = get_param_arr(paramObj);
+
             $('.video_wrap iframe').css({
                 width: 100+'%',
                 height: $('.video_wrap').width()*9/16
             })
             $('.program_guide .program_guide_content').on('click', function(e) {
                 var layer = $(this).find('.text_wrap');
-                var tl = gsap.timeline({});
+                var tl = gsap.timeline();
                 tl.set(layer, {display: 'block'})
                 .to(layer, {duration: 0.2, scale: 1, autoAlpha: 1, force3D: true});
-                // .fromTo(layer.find('.inner_wrapper'), {autoAlpha: 0, y: 5}, {duration: 0.1, autoAlpha: 1, y: 0});
             });
             $('.program_guide .program_guide_content .text_wrap .layer_close').on('click', function(e) {
                 e.stopPropagation();
                 var layer = $(this).closest('.text_wrap');
-                var tl = gsap.timeline({});
+                var tl = gsap.timeline();
                 tl.to(layer, {duration: 0.2,  autoAlpha: 0, scale: 0.9, force3D: true})
                 .set(layer, {display: 'none'});
 
@@ -413,6 +453,26 @@
                 $('.tab_content').removeClass('active');
                 $('.tab_content').eq(index).addClass('active');
             });
+            $('#chk1').on('click', function() {
+                if($(this).prop('checked')) {
+                    var target = $(this).attr('data-layer-open');
+                    popupToggle(target);
+                }
+            });
+            $('.layer-popup .layer-close').on('click', function() {
+                popupToggle($(this));
+            });
+            
+            function popupToggle(target) {
+                if($('html').hasClass('layer-opened')) {
+                    $('html').removeClass('layer-opened');
+                    $(target).closest('.layer-container').removeClass('is-opened');
+                } else {
+                    $(target).closest('.layer-container').addClass('is-opened');
+                    $('html').addClass('layer-opened');
+                }
+            }
+
             // 하단 네비 스크롤에 따라 상태 변경
             var gnbActive = function() {
                 var gnbLinks = new Array();
@@ -471,11 +531,31 @@
             $(window).on({
                 'load': function() {
                     gnbActive.init();
+                    if(paramObj.goSection) {
+                        $('html, body').animate({scrollTop: $('#section'+paramObj.goSection).offset().top}, 550);
+                    }
                 },
                 'scroll': function() {
                     gnbActive.init();
                 }
             });
-        })
+        });
+
+        function get_query(){
+            var url = document.location.href;
+            var qs = url.substring(url.indexOf('?') + 1).split('&');
+            for(var i = 0, result = {}; i < qs.length; i++){
+                qs[i] = qs[i].split('=');
+                result[qs[i][0]] = decodeURIComponent(qs[i][1]);
+            }
+            return result;
+        }
+        function get_param_arr(obj) {
+            var arr = [];
+            for (var key in obj) {
+                arr.push(obj[key]);
+            }
+            return arr;
+        }
     </script>
 </body></html>
