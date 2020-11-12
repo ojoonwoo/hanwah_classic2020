@@ -272,7 +272,7 @@ header {
 }
 
 .naver_wrap .naver_logo {
-    margin-bottom: 29px;
+    margin-bottom: 52px;
 }
 
 .naver_wrap .naver_title {
@@ -294,7 +294,6 @@ header {
 .naver_wrap .naver_sub_title {
     font-size: 28px;
     font-weight: 500;
-    line-height: 1.61;
     color: #171616;
     padding-bottom: 44px;
     border-bottom: 1px solid #b7b7b7;
@@ -379,6 +378,10 @@ header {
     height: 26px;
 }
 
+.naver_wrap .naver_contents .input_chk input:checked+label {
+    color: #e4793a;
+}
+
 .naver_wrap .naver_personal_info_label::after {
     content: "";
     display: block;
@@ -390,6 +393,10 @@ header {
     right: 1px;
     bottom: 0;
     z-index: 1;
+}
+
+.naver_wrap .naver_contents .input_chk input:checked+label::after {
+    background-color: #e4793a;
 }
 
 .naver_personal_info_alert {
