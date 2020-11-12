@@ -792,8 +792,6 @@ header {
     border: 0;
     border-radius: 5px;
     background-color: #e4793a;
-    display: table-cell;
-    vertical-align: text-bottom;
     font-size: 25px;
     font-weight: normal;
     color: #ffffff;
