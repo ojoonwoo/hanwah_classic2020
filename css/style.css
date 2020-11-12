@@ -272,7 +272,7 @@ header {
 }
 
 .naver_wrap .naver_logo {
-    margin-bottom: 52px;
+    margin-bottom: 39px;
 }
 
 .naver_wrap .naver_title {
@@ -442,7 +442,7 @@ header {
 }
 
 .program_guide .title_wrap .title {
-    color: #e4793a;
+    color: #fff;
     margin-bottom: 35px;
 }
 
@@ -514,6 +514,14 @@ header {
     transform: translateX(-50%);
     width: 520px;
     z-index: 100;
+}
+
+.contents_wrap .contents2_first .program_guide_content .text_wrap {
+    bottom: 87px;
+}
+
+.contents_wrap .contents2_second .program_guide_content .text_wrap {
+    bottom: 95px;
 }
 
 .contents_wrap .text_wrap.active {
