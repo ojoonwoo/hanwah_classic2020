@@ -101,6 +101,7 @@ section .inner {
     text-align: center;
     display: inline-block;
     width: 20%;
+    border-right: 1px solid #4f4f4f;
 }
 .menu li a {
     display: block;
