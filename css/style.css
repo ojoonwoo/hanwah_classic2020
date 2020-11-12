@@ -19,9 +19,16 @@ a {
     overflow: hidden;
 }
 
+/*========== common ==========*/
+
 html body .common_sub_title {
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 300;
+    color: #e4793a;
+    line-height: 41px;
+    border: 1px solid #e4793a;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 html body .common_title {
@@ -125,14 +132,14 @@ header {
     width: 100%;
 }
 
-.title_wrap h2 {
+.banner .title_wrap h2 {
     font-size: 28px;
     font-weight: normal;
     color: #f3f3f3;
     margin-bottom: 40px;
 }
 
-.button_wrap button {
+.banner .button_wrap button {
     width: 228px;
     height: 60px;
     border-radius: 5px;
@@ -159,17 +166,7 @@ header {
 }
 
 .hanwha_classic_2020 .sub_title {
-    border: 1px solid #e4793a;
-    box-sizing: border-box;
-    display: inline-block;
-    margin-bottom: 15px;
-}
-
-.hanwha_classic_2020 .sub_title h3 {
-    font-size: 18px;
-    font-weight: 300;
-    color: #e4793a;
-    padding: 12px 25px;
+    padding: 0 24px;
 }
 
 .hanwha_classic_2020 .title img {
@@ -433,8 +430,7 @@ header {
 }
 
 .program_guide .title_wrap .sub_title {
-    color: #ffffff;
-    margin-bottom: 35px;
+    padding:  0 48px;
 }
 
 .program_guide .title_wrap .title {
@@ -613,6 +609,7 @@ header {
     color: #ffffff;
     text-align: left;
     margin-bottom: 34px;
+    padding: 0;
 }
 
 .program_guide .schedule_wrap .title {
@@ -705,13 +702,12 @@ header {
     margin-bottom: 86px;
 }
 
-.introduce .sub_title {
-    color: #9b9b9b;
-    margin-bottom: 31px;
-}
-
 .introduce .title {
     color: #e4793a;
+}
+
+.introduce .title_wrap .sub_title {
+    padding: 0 20px;
 }
 
 .introduce .video_wrap {
@@ -728,17 +724,16 @@ header {
 
 .past_hanwha_classic .title_wrap {
     text-align: center;
-    margin-bottom: 56px;
+    margin-bottom: 44px;
 }
 
 .past_hanwha_classic .sub_title {
-    margin-bottom: 31px;
-    color: #9b9b9b;
+    padding: 0 20px;
 }
 
 .past_hanwha_classic .title {
-    width: 323px;
-    display: inline-block;
+    width: 324px;
+    margin: 0 auto;
 }
 
 .past_hanwha_classic .title img {
@@ -842,8 +837,7 @@ header {
 }
 
 .event .sub_title {
-    color: #9b9b9b;
-    margin-bottom: 30px;
+    padding: 0 30px;
 }
 
 .event .title {
@@ -851,7 +845,7 @@ header {
 }
 
 .event .title_wrap {
-    margin-bottom: 130px;
+    margin-bottom: 116px;
 }
 
 .event .content_img {
