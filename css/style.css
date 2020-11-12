@@ -620,7 +620,7 @@ header {
 }
 
 .program_guide .schedule_wrap .sub_title {
-    font-size: 30px;
+    font-size: 45px;
     font-weight: 500;
     color: #ffffff;
     text-align: left;
@@ -638,14 +638,14 @@ header {
 
 .program_guide .schedule_wrap .title_wrap {
     border-bottom: 1px solid #717171;
+    margin: 0;
 }
 
 .program_guide .playlist_wrap {
-    padding: 20px 0;
+    padding-top: 30px;
     height: 198px;
-    box-sizing: border-box;
     border-bottom: 1px solid #717171;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
 }
 
 .program_guide .playlist_wrap p {
@@ -653,6 +653,8 @@ header {
     font-weight: 300;
     line-height: 2;
     color: #ffffff;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .program_guide .playlist_wrap p span {
