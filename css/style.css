@@ -1097,7 +1097,7 @@ header {
 /*========== 푸터 ==========*/
 
 footer {
-    padding: 75px 0 428px 0;
+    padding: 75px 0;
     box-sizing: border-box;
     background-color: #020100;
 }
@@ -1220,7 +1220,7 @@ footer ul li:first-of-type::after {
     margin-bottom: 15px;
 }
 #agree-layer p {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.66;
 }
 #agree-layer p.bold-text {

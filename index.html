@@ -38,16 +38,16 @@
                     </ul>
                 </nav>
             </div>
-            <button type="button" class="event_btn">
+            <button type="button" class="event_btn section_jump" data-dest="#section2">
                 <p>Event</p>
                 <p>알람 신청하고<br>선물받기!</p>
             </button>
-            <!-- 라이브 시점 주석 해제 필요 -->
-            <!-- <a href="#" class="fixed_circle">
+            <!-- 라이브 시점 주석 해제 -->
+            <a href="https://www.naver.com" target="_blank" class="fixed_circle">
                 <img src="./imgs/live.png" alt="LIVE">
                 <p>라이브<br/>공연보기</p>
-            </a> -->
-            <!-- 라이브 시점 주석 해제 필요 -->
+            </a>
+            <!-- 라이브 시점 주석 해제 -->
         </header>
         <section class="banner">
             <div class="inner">
@@ -59,7 +59,7 @@
                         <h2>소프라노 임선혜와 바로크 프로젝트</h2>
                     </div>
                     <div class="button_wrap">
-                        <button type="button">
+                        <button type="button" class="section_jump" data-dest="#section1">
                             <p>자세히보기</p>
                         </button>
                     </div>
@@ -130,14 +130,14 @@
                             <p class="text">서울대 성악과 졸업, 독일 칼스루 국립음악대학 최고연주자<br>과정을 수료하였습니다. 세계 거장들과 함께 세계무대에서 활동<br>중인 소프라노입니다. 탁월한 언어적 지성으로 노래의 정서를 풀어<br>낸다는 평을 받고 있습니다.</p>
                         </div>
                     </div>
-                    <div class="contents2">
-                        <div class="contents2_first program_guide_content waypoints" data-waypoints-delay="100">
+                    <div class="contents2 waypoints">
+                        <div class="contents2_first program_guide_content">
                             <div class="text_wrap">
                                 <h2 class="title">지휘/리코더 권민석</h2>
                                 <p class="text">지휘자겸 리코더 연주자로 유럽무대에서 활발히 활동중인 <br>권민석은 한국예술종합학교, 서울 음대 작곡과, 네덜란드 헤이그 <br>왕립음악원, 암스테르담 음악원에서 고음악과 지휘를 <br>공부하였습니다.</p>
                             </div>
                         </div>
-                        <div class="contents2_second program_guide_content waypoints" data-waypoints-delay="100">
+                        <div class="contents2_second program_guide_content">
                             <div class="text_wrap">
                                 <h2 class="title">악장/바이올린 김나연</h2>
                                 <p class="text">솔로 연주 뿐만 아니라 오케스트라와 실내악에도 많은 열정을 <br>가지고 있는 바이올리니스트 입니다. 세계 각지 주요 공연장에서 <br>르네상스 음악부터 현대 음악을 아우르는 레퍼토리로 다수의 <br>리사이틀과 실내악, 챔버 오케 스트라 연주, 다수의 바로크 오페라 <br>작업에 참여하였습니다.</p>
@@ -191,7 +191,7 @@
                         <div class="ticket">
                             <img src="./imgs/ticket_icon.png" alt="ticket">
                             <h2>예술의전당, 인터파크에서<br>바로크프로젝트 티켓을 예매하세요!</h2>
-                            <button type="button">예매링크 바로가기</button>
+                            <button type="button" class="btn-role-link" data-url="https://www.naver.com">예매링크 바로가기</button>
                         </div>
                     </div>
                 </div>
@@ -291,7 +291,7 @@
                     <h2 class="title common_title">이벤트</h2>
                 </div>
                 <div class="contents_wrap">
-                    <div class="content1 waypoints" data-waypoints-delay="100">
+                    <div class="content1 waypoints">
                         <img src="./imgs/event_img_1.png" alt="스타벅스 기프티콘" class="content_img">
                         <div class="text_wrap">
                             <dl>
@@ -310,10 +310,10 @@
                                 <dt>참&nbsp;&nbsp;여&nbsp;&nbsp;방&nbsp;&nbsp;법</dt>
                                 <dd><span>한화클래식 홈페이지 상에서 휴대폰 번호를 남겨<br> 알람받기를 신청해주세요!</span></dd>
                             </dl>
-                            <button type="button">알람신청하기</button>
+                            <button type="button" class="section_jump" data-dest="#section2">알람신청하기</button>
                         </div>
                     </div>
-                    <div class="content2 waypoints" data-waypoints-delay="200">
+                    <div class="content2 waypoints">
                         <img src="./imgs/event_img_2.png" alt="기대평 이벤트" class="content_img">
                         <div class="text_wrap">
                             <dl>
@@ -335,9 +335,9 @@
                                     <p><span>둘, 한화데이즈 인스타그램</span><br>게시물에 댓글로 기대평을 남기고 친구를 태그해주세요!</p>
                                 </dd>
                             </dl>
-                            <button type="button"><img src="./imgs/fb_logo.png" alt="페이스북">
+                            <button type="button" class="btn-role-link" data-url="https://facebook.com"><img src="./imgs/fb_logo.png" alt="페이스북">
                                 <span>한화데이즈 페이스북</span></button>
-                            <button type="button"><img src="./imgs/insta_logo.png" alt="인스타그램"><span>한화데이즈 인스타그램</span></button>
+                            <button type="button" class="btn-role-link" data-url="https://instagram.com"><img src="./imgs/insta_logo.png" alt="인스타그램"><span>한화데이즈 인스타그램</span></button>
                         </div>
                     </div>
                 </div>
@@ -363,12 +363,12 @@
                 <div class="title">한화클래식 2020 공연 알림 서비스 및<br/>이벤트를 위한 개인정보 수집·이용 동의서</div>
                 <div class="block block_1">
                     <p class="normal-text">
-                        한화, ㈜한컴, ㈜큐스컴, ㈜제이에스바흐는 더 나은 서비스를 제공하고자 한화클래식 2020 공연의 실시간 알림 서비스/이벤트 제공을 위하여<br/>아래와 같이 개인정보를 수집/이용/제공하는 내용을『개인정보보호법』,『신용정보의 이용 및 보호에 관한 법률』및『정보통신망 이용 촉진<br/>및 정보보호 등에 관한 법률』등에 따라 고지하오니 내용을 자세히 읽어보신 후 동의하여 주시기 바랍니다.
+                        한화, ㈜한컴, ㈜큐스컴, ㈜제이에스바흐는 더 나은 서비스를 제공하고자 한화클래식 2020 공연의 실시간 알림 서비스/이벤트 제공을 위하여 아래와 같이 개인정보를 수집/이용/제공하는 내용을『개인정보보호법』,『신용정보의 이용 및 보호에 관한 법률』및『정보통신망 이용 촉진 및 정보보호 등에 관한 법률』등에 따라 고지하오니 내용을 자세히 읽어보신 후 동의하여 주시기 바랍니다.
                     </p>
                 </div>
                 <div class="block block_2">
                     <p class="bold-text">○ 최소한의 정보 처리 및 동의거부에 관한 안내</p>
-                    <p class="normal-text">- 정보 동의 시 목적달성에 부합하는 최소한의 정보만 수집 및 이용하며, 동의하지 않는 경우 알림 서비스 제공 및 이벤트의 참여가 제한될 수<br/>있습니다.</p>
+                    <p class="normal-text">- 정보 동의 시 목적달성에 부합하는 최소한의 정보만 수집 및 이용하며, 동의하지 않는 경우 알림 서비스 제공 및 이벤트의 참여가 제한될 수 있습니다.</p>
                     <p class="bold-text">○ 개인정보 수집·이용 방법</p>
                     <p class="normal-text">- 휴대전화번호</p>
                     <p class="bold-text">○ 개인정보 수집·이용 목적</p>
@@ -379,7 +379,7 @@
                     </p>
                     <p class="bold-text">○ 개인정보 보유·이용 기간</p>
                     <p class="normal-text">
-                        - 한화클래식 2020 공연 알림를 위해 보내주신 정보는 목적이 달성된 후 배송과 관련된 민원 및 문의를 위한 일정기간(1년) 저장 후<br/>파기합니다.<br/>일정기간(1년) 저장된 개인정보는 법률에 의한 경우가 아니고서는 보유 이외의 다른 목적으로는 이용하지 않습니다.
+                        - 한화클래식 2020 공연 알림를 위해 보내주신 정보는 목적이 달성된 후 배송과 관련된 민원 및 문의를 위한 일정기간(1년) 저장 후 파기합니다.<br/>일정기간(1년) 저장된 개인정보는 법률에 의한 경우가 아니고서는 보유 이외의 다른 목적으로는 이용하지 않습니다.
                     </p>
                     <p class="bold-text">○ 개인정보 제공동의 철회</p>
                     <p class="normal-text">
@@ -395,14 +395,11 @@
             paramObj = get_query();
             paramValArr = get_param_arr(paramObj);
 
-            /* 네이버 개인정보수집동의 스크립트 */
-
             $(".naver_submit").click(function() {
                 // if ($("#chk1").is(":checked") == false) {
                 //     $(".naver_personal_info_alert").show();
                 // }
             });
-
             /* 지난 한화클래식 탭 메뉴 스크립트 */
             $('.tab_link').click(function() {
                 var index = $(this).index();
@@ -417,12 +414,14 @@
                 $('.tab_content').removeClass('active');
                 $('.tab_content').eq(index).addClass('active');
             });
-
-            $('.gnb-link').on('click', function() {
+            $('.gnb-link, .section_jump').on('click', function() {
                 var dest = $(this).attr('data-dest');
-                $('html, body').animate({scrollTop: $(dest).offset().top}, 550);
+                $('html, body').animate({scrollTop: $(dest).offset().top-$('header').outerHeight()+1}, 550);
             });
-
+            $('.btn-role-link').on('click', function() {
+                var url = $(this).attr('data-url');
+                window.open(url);
+            });
             $('#chk1').on('click', function() {
                 if($(this).prop('checked')) {
                     var target = $(this).attr('data-layer-open');
@@ -432,7 +431,6 @@
             $('.layer-popup .layer-close').on('click', function() {
                 popupToggle($(this));
             });
-            
             function popupToggle(target) {
                 if($('html').hasClass('layer-opened')) {
                     $('html').removeClass('layer-opened');
@@ -491,7 +489,7 @@
                         _this.destroy();
                     }, delay);
                 },{
-                    offset: '100%'
+                    offset: '70%'
                 });
             });
 
