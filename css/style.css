@@ -19,9 +19,16 @@ a {
     overflow: hidden;
 }
 
+/*========== common ==========*/
+
 html body .common_sub_title {
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 300;
+    color: #e4793a;
+    line-height: 41px;
+    border: 1px solid #e4793a;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 html body .common_title {
@@ -125,14 +132,14 @@ header {
     width: 100%;
 }
 
-.title_wrap h2 {
+.banner .title_wrap h2 {
     font-size: 28px;
     font-weight: normal;
     color: #f3f3f3;
     margin-bottom: 40px;
 }
 
-.button_wrap button {
+.banner .button_wrap button {
     width: 228px;
     height: 60px;
     border-radius: 5px;
@@ -155,21 +162,11 @@ header {
 
 .hanwha_classic_2020 .title_warp {
     text-align: center;
-    margin-bottom: 84px;
+    margin-bottom: 80px;
 }
 
 .hanwha_classic_2020 .sub_title {
-    border: 1px solid #e4793a;
-    box-sizing: border-box;
-    display: inline-block;
-    margin-bottom: 15px;
-}
-
-.hanwha_classic_2020 .sub_title h3 {
-    font-size: 18px;
-    font-weight: 300;
-    color: #e4793a;
-    padding: 12px 25px;
+    padding: 0 24px;
 }
 
 .hanwha_classic_2020 .title img {
@@ -193,14 +190,14 @@ header {
 .hanwha_classic_2020 .contents1_left .contents1_subTitle {
     font-size: 25px;
     font-weight: 500;
-    color: #ffffff;
+    color: #e4793a;
     line-height: 1.4;
     margin-bottom: 29px;
 }
 
 .hanwha_classic_2020 .contents1_left .contents1_title {
     display: inline-block;
-    margin-bottom: 70px;
+    margin-bottom: 57px;
 }
 
 .hanwha_classic_2020 .contents1_left .text {
@@ -275,7 +272,7 @@ header {
 }
 
 .naver_wrap .naver_logo {
-    margin-bottom: 29px;
+    margin-bottom: 39px;
 }
 
 .naver_wrap .naver_title {
@@ -297,7 +294,6 @@ header {
 .naver_wrap .naver_sub_title {
     font-size: 28px;
     font-weight: 500;
-    line-height: 1.61;
     color: #171616;
     padding-bottom: 44px;
     border-bottom: 1px solid #b7b7b7;
@@ -382,6 +378,10 @@ header {
     height: 26px;
 }
 
+.naver_wrap .naver_contents .input_chk input:checked+label {
+    color: #e4793a;
+}
+
 .naver_wrap .naver_personal_info_label::after {
     content: "";
     display: block;
@@ -393,6 +393,10 @@ header {
     right: 1px;
     bottom: 0;
     z-index: 1;
+}
+
+.naver_wrap .naver_contents .input_chk input:checked+label::after {
+    background-color: #e4793a;
 }
 
 .naver_personal_info_alert {
@@ -430,15 +434,16 @@ header {
 
 .program_guide .title_wrap {
     text-align: center;
+    margin-bottom: 82px;
 }
 
 .program_guide .title_wrap .sub_title {
-    color: #ffffff;
-    margin-bottom: 35px;
+    padding:  0 48px;
 }
 
 .program_guide .title_wrap .title {
-    color: #e4793a;
+    color: #fff;
+    margin-bottom: 35px;
 }
 
 .program_guide .title_wrap .text {
@@ -446,7 +451,6 @@ header {
     font-weight: 300;
     line-height: 1.75;
     color: #ffffff;
-    margin-bottom: 82px;
 }
 
 .program_guide .contents_wrap {
@@ -510,6 +514,14 @@ header {
     transform: translateX(-50%);
     width: 520px;
     z-index: 100;
+}
+
+.contents_wrap .contents2_first .program_guide_content .text_wrap {
+    bottom: 87px;
+}
+
+.contents_wrap .contents2_second .program_guide_content .text_wrap {
+    bottom: 95px;
 }
 
 .contents_wrap .text_wrap.active {
@@ -608,11 +620,12 @@ header {
 }
 
 .program_guide .schedule_wrap .sub_title {
-    font-size: 30px;
+    font-size: 45px;
     font-weight: 500;
     color: #ffffff;
     text-align: left;
     margin-bottom: 34px;
+    padding: 0;
 }
 
 .program_guide .schedule_wrap .title {
@@ -625,14 +638,14 @@ header {
 
 .program_guide .schedule_wrap .title_wrap {
     border-bottom: 1px solid #717171;
+    margin: 0;
 }
 
 .program_guide .playlist_wrap {
-    padding: 20px 0;
+    padding-top: 30px;
     height: 198px;
-    box-sizing: border-box;
     border-bottom: 1px solid #717171;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
 }
 
 .program_guide .playlist_wrap p {
@@ -640,6 +653,8 @@ header {
     font-weight: 300;
     line-height: 2;
     color: #ffffff;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .program_guide .playlist_wrap p span {
@@ -705,13 +720,12 @@ header {
     margin-bottom: 86px;
 }
 
-.introduce .sub_title {
-    color: #9b9b9b;
-    margin-bottom: 31px;
-}
-
 .introduce .title {
     color: #e4793a;
+}
+
+.introduce .title_wrap .sub_title {
+    padding: 0 20px;
 }
 
 .introduce .video_wrap {
@@ -728,17 +742,16 @@ header {
 
 .past_hanwha_classic .title_wrap {
     text-align: center;
-    margin-bottom: 56px;
+    margin-bottom: 44px;
 }
 
 .past_hanwha_classic .sub_title {
-    margin-bottom: 31px;
-    color: #9b9b9b;
+    padding: 0 20px;
 }
 
 .past_hanwha_classic .title {
-    width: 323px;
-    display: inline-block;
+    width: 324px;
+    margin: 0 auto;
 }
 
 .past_hanwha_classic .title img {
@@ -842,8 +855,7 @@ header {
 }
 
 .event .sub_title {
-    color: #9b9b9b;
-    margin-bottom: 30px;
+    padding: 0 30px;
 }
 
 .event .title {
@@ -851,7 +863,7 @@ header {
 }
 
 .event .title_wrap {
-    margin-bottom: 130px;
+    margin-bottom: 116px;
 }
 
 .event .content_img {
