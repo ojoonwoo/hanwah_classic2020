@@ -421,6 +421,9 @@ header {
     margin-bottom: 23px;
     cursor: pointer;
     outline: 0 none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
 }
 
 .naver_wrap .naver_personal_info_label {
@@ -430,7 +433,10 @@ header {
     font-size: 20px;
     font-weight: 300;
     color: #757575;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     cursor: pointer;
 }
 

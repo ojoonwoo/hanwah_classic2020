@@ -83,6 +83,7 @@ html body .common_title {
     border-top: 1px solid #4f4f4f;
     border-bottom: 1px solid #4f4f4f;
     background: #020100;
+    position: -webkit-sticky;
     position: sticky;
     top: -1px;
     z-index: 999;
@@ -348,6 +349,9 @@ section .inner {
     font-weight: 500;
     color: #ffffff;
     margin-top: 15px;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
 }
 
 .naver_wrap .naver_personal_info {
@@ -456,7 +460,8 @@ section .inner {
     display: inline-block;
     padding: 0 5px;
     width: 50%;
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
     cursor: pointer;
 }
 
