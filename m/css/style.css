@@ -47,7 +47,7 @@ html body .common_title {
     border-bottom: 1px solid #4f4f4f;
     background: #020100;
     position: sticky;
-    top: 0;
+    top: -1px;
     z-index: 999;
 }
 
@@ -72,6 +72,21 @@ section .inner {
     color: #ffffff;
 }
 
+.fixed_circle {
+    position: fixed;
+    bottom: 27px;
+    right: 17px;
+    width: 86px;
+    z-index: 200;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+.fixed_circle.is-show {
+    opacity: 1;
+    pointer-events: all;
+}
+
 /*========== 섹션1 banner ==========*/
 
 .banner {
@@ -94,20 +109,44 @@ section .inner {
     width: auto;
 }
 
-.title_wrap h2 {
+.banner .title_wrap h2 {
     font-size: 13px;
     font-weight: normal;
     color: #f3f3f3;
     margin-bottom: 22px;
 }
 
-.button_wrap button {
+.banner .button_wrap button {
     width: 114px;
     height: 30px;
     border-radius: 3px;
     background-color: #e4793a;
     color: #ffffff;
     font-size: 11px;
+}
+.banner .button_wrap .live-element {
+    display: block;
+    width: 114px;
+    padding: 9px 0;
+    border-radius: 3px;
+    background-color: #e4793a;
+    font-size: 0;
+    margin: 0 auto;
+}
+.banner .button_wrap .live-element:before {
+    content: "";
+    width: 12px;
+    height: 13px;
+    background: url(../imgs/section1_button_obj.png) 50% / 12px 13px no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 7px;
+}
+.banner .button_wrap .live-element span {
+    display: inline-block;
+    font-size: 11px;
+    color: #ffffff;
+    vertical-align: middle;
 }
 
 
@@ -294,8 +333,8 @@ section .inner {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 12px;
-    height: 12px;
+    width: 13px;
+    height: 13px;
     content: '';
     display: block;
     position: absolute;
@@ -305,6 +344,12 @@ section .inner {
 }
 .naver_wrap .chk-trigger:checked+label::before {
     background-image: url(../imgs/check_on.png);
+}
+.naver_wrap .chk-trigger:checked+label {
+    color: #e4793a;
+}
+.naver_wrap .chk-trigger:checked+label::after {
+    background-color: #e4793a;
 }
 
 .naver_wrap .naver_personal_info::after {
@@ -375,10 +420,13 @@ section .inner {
     display: inline-block;
     padding: 0 5px;
     width: 50%;
+    backface-visibility: hidden;
 }
 
 .contents_wrap .program_guide_content .text_wrap {
     display: none;
+    opacity: 0;
+    transform: scale(0.9);
     position: absolute;
     top: 12px;
     bottom: 12px;
@@ -390,9 +438,9 @@ section .inner {
     background-color: #000000;
     border-radius: 3px;
 }
-.contents_wrap .program_guide_content.active .text_wrap  {
+/* .contents_wrap .program_guide_content.active .text_wrap  {
     display: block;
-}
+} */
 
 .contents_wrap .text_wrap .inner_wrapper {
     position: relative;
@@ -646,6 +694,7 @@ section .inner {
     font-weight: 500;
     color: #a2a2a2;
     margin-right: 1px;
+    transition: all 0.25s ease;
 }
 .past_hanwha_classic .tab_link:last-child {
     margin-right: 0;
@@ -895,5 +944,15 @@ footer ul li:first-of-type::after {
 }
 .gnb-link.fix-color.is-active {
     color: #ffffff;
+}
+.waypoints {
+    transform: translate(0, 10px);
+    opacity: 0;
+    transition: transform 0.6s ease-out 0.6s, opacity 0.5s, linear 0.8s;
+    will-change: transform, opacity;
+}
+.waypoints.is-animate {
+    transform: translate(0, 0);
+    opacity: 1;
 }
 /* end for js */
