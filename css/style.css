@@ -16,14 +16,51 @@ a {
 
 .container {
     min-width: 1280px;
+    /* overflow: hidden; */
+}
+html.layer-opened {
     overflow: hidden;
 }
-
+.for-a11y {
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    color: transparent;
+    font-size: 1px;
+    line-height: 1px;
+    opacity: 0;
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
+    filter: alpha(opacity=0);
+}
+::-webkit-input-placeholder {
+    letter-spacing: -0.025em;
+    color: #868686;
+    font-size: 20px;
+} 
+:-moz-placeholder {
+    letter-spacing: -0.025em;
+    color: #868686;
+    font-size: 20px;
+    opacity: 1;
+}
+::-moz-placeholder {
+    letter-spacing: -0.025em;
+    color: #868686;
+    opacity: 1; 
+    font-size: 20px;
+}
+:-ms-input-placeholder {
+    letter-spacing: -0.025em;
+    color: #868686; 
+    font-size: 20px;
+}
 /*========== common ==========*/
 
 html body .common_sub_title {
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
     color: #e4793a;
     line-height: 41px;
     border: 1px solid #e4793a;
@@ -73,6 +110,15 @@ header {
     content: "";
     clear: both;
 }
+.manu li .gnb-link {
+    transition: color 0.12s ease;
+}
+.manu li .gnb-link.is-active {
+    color: #e4793a;
+}
+.manu li .gnb-link:hover {
+    color: #e4793a;
+}
 
 .event_btn {
     position: fixed;
@@ -87,8 +133,8 @@ header {
 
 .event_btn p {
     font-size: 20px;
-    font-weight: 500;
-    line-height: normal;
+    font-weight: 700;
+    line-height: 1.3;
     text-align: center;
     color: #ffffff;
 }
@@ -101,6 +147,44 @@ header {
     width: 56px;
     height: 1px;
     background-color: #fff;
+}
+
+.fixed_circle {
+    position: fixed;
+    top: 508px;
+    width: 172px;
+    height: 172px;
+    right: 110px;
+    z-index: 999;
+    background-color: #ffffff;
+    border: 8px solid #e4793a;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.fixed_circle img {
+    display: block;
+    width: 45px;
+    margin: 15px auto 13px;
+}
+.fixed_circle p {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.3;
+    text-align: center;
+    color: #e4793a;
+    padding-top: 10px;
+    position: relative;
+}
+.fixed_circle p:before {
+    content: "";
+    height: 1px;
+    width: 56px;
+    background-color: #e4793a;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -28px;
 }
 
 /*========== 섹션1 banner ==========*/
@@ -1050,3 +1134,111 @@ footer ul li:first-of-type::after {
     vertical-align: middle;
     margin: 0 30px;
 }
+
+/* 약관 팝업 */
+.layer-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    overflow-y: scroll;
+    overflow-x: auto;
+    font-size: 0;
+    text-align: center;
+    white-space: normal;
+    word-break: normal;
+    word-wrap: normal;
+    background: rgba(0, 0, 0, 0.8);
+}
+.layer-container:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.layer-container .layer-popup {
+    display: inline-block;
+}
+.layer-container.is-opened {
+    display: block;
+}
+.layer-container.is-opened .layer-popup {
+    transform: scale(1) translateY(0);
+}
+.layer-popup {
+    position: relative;
+    z-index: 2;
+    vertical-align: middle;
+    white-space: normal;
+    word-break: keep-all;
+    word-wrap: break-word;
+    text-align: left;
+    transition: all 0.35s ease 0.6s;
+    transform: scale(0) translateY(10px);
+    width: 100%;
+    background-color: transparent;
+}
+.layer-popup .inner {
+    position: relative;
+    letter-spacing: -0.025em;
+}
+.layer-popup .inner .layer-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    box-sizing: content-box;
+    width: 28px;
+    height: 28px;
+    background: url(../imgs/layer_close.png) 50% / 28px 28px no-repeat;
+    padding: 39px;
+}
+#agree-layer {
+    box-sizing: border-box;
+    width: 750px;
+    margin: 0 auto;
+}
+#agree-layer .inner {
+    width: 100%;
+    border: 3px solid #e4793a;
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 45px 38px 45px 38px;
+    color: #010101;
+}
+#agree-layer .title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.38;
+    margin-bottom: 38px;
+}
+#agree-layer .block_1 {
+    margin-bottom: 15px;
+}
+#agree-layer p {
+    font-size: 12px;
+    line-height: 1.66;
+}
+#agree-layer p.bold-text {
+    font-weight: 700;
+}
+#agree-layer p.normal-text {
+    font-weight: 300;
+}
+/* end 약관 팝업 */
+
+/* for js */
+.waypoints {
+    transform: translate(0, 10px);
+    opacity: 0;
+    transition: transform 0.6s ease-out 0.6s, opacity 0.5s, linear 0.8s;
+    will-change: transform, opacity;
+}
+.waypoints.is-animate {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+/* end for js */

@@ -441,6 +441,10 @@
                 .set(layer, {display: 'none'});
 
             });
+            $('.gnb-link').on('click', function() {
+                var dest = $(this).attr('data-dest');
+                $('html, body').animate({scrollTop: $(dest).offset().top}, 550);
+            });
             /* 섹션6 탭 메뉴 스크립트 */
             $('.tab_link').click(function() {
                 var index = $(this).index();
