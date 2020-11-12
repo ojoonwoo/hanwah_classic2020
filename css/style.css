@@ -420,6 +420,7 @@ header {
     color: #ffffff;
     margin-bottom: 23px;
     cursor: pointer;
+    outline: 0 none;
 }
 
 .naver_wrap .naver_personal_info_label {
