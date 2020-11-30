@@ -100,16 +100,32 @@ section .inner {
 .menu li {
     text-align: center;
     display: inline-block;
-    width: 20%;
+    width: 16.666%;
     border-right: 1px solid #4f4f4f;
+}
+.menu li:last-child {
+    width: 16.67%;
 }
 .menu li a {
     display: block;
-    padding: 20px 0;
+    /* padding: 20px 0; */
+    height: 62px;
     font-size: 12px;
     line-height: 1.3;
     color: #ffffff;
 }
+.menu li:first-child .gnb-link {background: url(../imgs/nav_1.png) 50% / 49px 22.5px no-repeat;}
+.menu li:nth-child(2) .gnb-link {background: url(../imgs/nav_2.png) 50% / 38px 23.5px no-repeat;}
+.menu li:nth-child(3) .gnb-link {background: url(../imgs/nav_3.png) 50% / 39px 23.5px no-repeat;}
+.menu li:nth-child(4) .gnb-link {background: url(../imgs/nav_4.png) 50% / 49px 23.5px no-repeat;}
+.menu li:nth-child(5) .gnb-link {background: url(../imgs/nav_6.png) 50% / 36px 21.5px no-repeat #3c3c3c;}
+.menu li:last-child .gnb-link {background: url(../imgs/nav_5.png) 50% / 38px 23.5px no-repeat;}
+
+.menu li:first-child .gnb-link.is-active {background: url(../imgs/nav_1_active.png) 50% / 49px 22.5px no-repeat;}
+.menu li:nth-child(2) .gnb-link.is-active {background: url(../imgs/nav_2_active.png) 50% / 38px 23.5px no-repeat;}
+.menu li:nth-child(3) .gnb-link.is-active {background: url(../imgs/nav_3_active.png) 50% / 39px 23.5px no-repeat;}
+.menu li:nth-child(4) .gnb-link.is-active {background: url(../imgs/nav_4_active.png) 50% / 49px 23.5px no-repeat;}
+.menu li:last-child .gnb-link.is-active {background: url(../imgs/nav_5_active.png) 50% / 38px 23.5px no-repeat;}
 
 .fixed_circle {
     position: fixed;
@@ -409,9 +425,9 @@ section .inner {
 
 /*========== 섹션4 program_guide ==========*/
 
-.program_guide {
+section.program_guide {
     background-color: #020100;
-    padding: 77px 0 79px 0;
+    padding: 77px 0 55px 0;
 }
 
 .program_guide .title_wrap {
@@ -613,7 +629,7 @@ section .inner {
 }
 
 .program_guide .ticket_wrap {
-    padding: 54px 0 0;
+    padding: 34px 0 0;
 }
 .program_guide .ticket_wrap h2 {
     font-size: 17px;
@@ -623,30 +639,36 @@ section .inner {
     text-align: center;
     margin-bottom: 15px;
 }
-
+.program_guide .ticket_wrap h2:before {
+    content: "";
+    display: block;
+    width: 39.5px;
+    height: 36.5px;
+    background: url(../imgs/ticket_icon.png) 50% / cover no-repeat;
+    margin: 0 auto 10px;
+}
 .program_guide .ticket_wrap .inner {
     padding: 0 25px;
+}
+.program_guide .ticket_wrap .btn-wrap {
+    display: flex;
+    flex-wrap: nowrap;
 }
 .program_guide .ticket_wrap button {
     width: 100%;
     height: 50px;
     border-radius: 3px;
     background-color: #e4793a;
+    font-size: 0;
+}
+.program_guide .ticket_wrap button:first-child {
+    margin-right: 10px;
 }
 .program_guide .ticket_wrap button span {
     display: inline-block;
     font-size: 14px;
     font-weight: 500;
     color: #ffffff;
-    vertical-align: middle;
-    margin-left: 7px;
-}
-.program_guide .ticket_wrap button:before {
-    content: "";
-    display: inline-block;
-    width: 31px;
-    height: 28px;
-    background: url(../imgs/ticket_icon.png) 50% / cover no-repeat;
     vertical-align: middle;
 }
 
@@ -714,7 +736,7 @@ section .inner {
 
 .past_hanwha_classic .tabs {
     display: inline-block;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 
 .past_hanwha_classic .tab_link {
@@ -748,15 +770,24 @@ section .inner {
 .past_hanwha_classic .tab_content.active {
     display: block;
 }
+.past_hanwha_classic .tab_content .wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.past_hanwha_classic .tab_content .img_wrap {
+    flex-basis: 167px;
+    flex-shrink: 0;
+}
 .past_hanwha_classic .tab_content .text_wrap {
-    margin-top: 20px;
+    margin-left: 10px;
 }
 .past_hanwha_classic .tab_content .text_wrap h2 {
     font-size: 15px;
     font-weight: 700;
     color: #020100;
     text-align: left;
-    margin-bottom: 20px;
+    line-height: 1.26;
+    margin-bottom: 13px;
 }
 
 .past_hanwha_classic .tab_content .text_wrap h2 span {
@@ -764,7 +795,7 @@ section .inner {
     font-size: 12px;
     font-weight: 400;
     letter-spacing: -0.05em;
-    margin-bottom: 7px;
+    margin-bottom: 12px;
 }
 
 .past_hanwha_classic .tab_content .text_wrap p {
@@ -914,6 +945,10 @@ section .inner {
 
 .event .content2 .text_wrap button img {
     display: inline-block;
+    vertical-align: middle;
+}
+.event .content2 .text_wrap button img:first-child {
+    display: inline-block;
     width: 18px;
     height: 18px;
     vertical-align: middle;
@@ -1007,7 +1042,6 @@ footer ul li:first-of-type::after {
     word-break: keep-all;
     word-wrap: break-word;
     text-align: left;
-    /* -webkit-transition: all 0.35s ease; */
     transition: all 0.35s ease 0.6s;
     transform: scale(0) translateY(10px);
     width: 100%;
@@ -1017,6 +1051,10 @@ footer ul li:first-of-type::after {
 .layer-popup .inner {
     position: relative;
     letter-spacing: -0.025em;
+    border: 2px solid #e4793a;
+    border-radius: 3px;
+    background-color: #ffffff;
+    color: #010101;
 }
 .layer-popup .inner .layer-close {
     position: absolute;
@@ -1030,11 +1068,7 @@ footer ul li:first-of-type::after {
     padding: 20px;
 }
 #agree-layer .inner {
-    border: 2px solid #e4793a;
-    border-radius: 3px;
-    background-color: #ffffff;
     padding: 22px 25px;
-    color: #010101;
 }
 #agree-layer .title {
     font-size: 12px;
@@ -1056,13 +1090,131 @@ footer ul li:first-of-type::after {
     font-weight: 400;
 }
 /* end 약관 팝업 */
+/* 코로나 대응 공지 팝업 */
+.notice-layer > .inner {
+    padding: 25px;
+}
+.notice-layer .title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 25px;
+    font-size: 15px;
+    font-size: 4vw;
+    font-weight: 700;
+}
+.notice-layer .title:after {
+    content: "";
+    height: 2px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    background-color: #e4793a;
+}
+.notice-layer .text-block {
+    margin-bottom: 10px;
+    font-size: 11px;
+    font-size: 3vw;
+    font-weight: 400;
+    line-height: 1.36;
+    letter-spacing: -0.05em;
+    word-break: break-all;
+}
+.notice-layer .text-block.font-bold {
+    font-weight: 700;
+}
+.notice-layer .text-block b {
+    display: block;
+    font-weight: 700;
+}
+.notice-layer .text-block.color-active {
+    color: #e4793a;
+}
+.notice-layer .text-block:last-of-type {
+    margin-bottom: 0;
+}
+.notice-layer table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 10px;
+    /* letter-spacing: -0.05em; */
+}
+.notice-layer table thead th, .notice-layer table tbody td {
+    text-align: center;
+    padding: 5px 0;
+    line-height: 1.4;
+    letter-spacing: -0.07em;
+}
+.notice-layer table thead tr {
+    border-bottom: 1px solid #ffffff;
+}
+.notice-layer table tr {
+    border-bottom: 1px solid #c3c3c3;
+}
+.notice-layer table thead th {
+    font-size: 10px;
+    font-size: 2.6vw;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -0.05em;
+    background-color: #3d3d3d;
+    width: 50%;
+}
+.notice-layer table thead th:first-child {
+    border-right: 1px solid #ffffff;
+}
+.notice-layer table tbody td {
+    font-size: 10px;
+    font-size: 2.6vw;
+    font-weight: 400;
+    width: 25%;
+    vertical-align: middle;
+    position: relative;
+}
+.notice-layer table tr td.bg-gr {
+    background-color: #f6f6f6;
+}
+.notice-layer table .font-active {
+    color: #e4793a;
+}
+.notice-layer table .bg-active {
+    background-color: #e4793a;
+    color: #ffffff;
+}
+.notice-layer .guide-block {
+    padding: 14px 0 14px 14px;
+    margin-top: 15px;
+    background-color: #f0f0f0;
+}
+.notice-layer .guide-block b,
+.notice-layer .guide-block span {
+    display: block;
+    line-height: 1.36;
+    color: #010101;
+    font-size: 11px;
+    font-size: 3vw;
+    letter-spacing: -0.05em;
+}
+.notice-layer .guide-block b {
+    font-weight: 700;
+}
+.notice-layer .guide-block span {
+    font-weight: 400;
+}
+.notice-layer .guide-block span a {
+    color: #e4793a;
+    font-weight: 700;
+    text-decoration: underline;
+}
+/* end 코로나 대응 공지 팝업 */
 
 /* for js */
 .gnb-link.is-active {
     color: #e4793a;
 }
 .gnb-link.fix-color {
-    background-color: #e4793a;
+    background-color: #e4793a !important;
 }
 .gnb-link.fix-color.is-active {
     color: #ffffff;
@@ -1078,3 +1230,9 @@ footer ul li:first-of-type::after {
     opacity: 1;
 }
 /* end for js */
+
+@media screen and (max-width: 380px) {
+    .past_hanwha_classic .tab_content:nth-of-type(6) .text_wrap h2 br {
+        display: none;
+    }
+}

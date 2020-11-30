@@ -68,3 +68,10 @@
 	font-weight: 800;
 	src: url(../../fonts/NotoSansKR-Bold.eot), url(../../fonts/NotoSansKR-Bold.eot?#iefix) format("embedded-opentype"), url(../../fonts/NotoSansKR-Bold.woff) format("woff");
 }
+/* 한화 */
+@font-face {
+	font-family: 'Hanwha';
+	font-style: normal;
+	font-weight: 300;
+	src: url(../../fonts/Hanwha-Light.eot), url(../../fonts/Hanwha-Light.eot?#iefix) format("embedded-opentype"), url(../../fonts/Hanwha-Light.woff) format("woff");
+}
