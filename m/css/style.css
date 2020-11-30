@@ -1139,6 +1139,7 @@ footer ul li:first-of-type::after {
     width: 100%;
     margin-bottom: 10px;
     border-spacing: 0;
+    border: 0 none;
 }
 .notice-layer table thead th, .notice-layer table tbody td {
     text-align: center;
@@ -1149,7 +1150,8 @@ footer ul li:first-of-type::after {
 .notice-layer table thead tr {
     border-bottom: 1px solid #ffffff;
 }
-.notice-layer table tr {
+.notice-layer table tbody tr {
+    border: 0 none;
     border-bottom: 1px solid #c3c3c3;
 }
 .notice-layer table thead th {
