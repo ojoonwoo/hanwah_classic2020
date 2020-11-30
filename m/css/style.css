@@ -1150,7 +1150,7 @@ footer ul li:first-of-type::after {
     border-bottom: 1px solid #ffffff;
 }
 .notice-layer table tr {
-    /* border-bottom: 1px solid #c3c3c3; */
+    border-bottom: 1px solid #c3c3c3;
 }
 .notice-layer table thead th {
     font-size: 10px;
@@ -1171,7 +1171,6 @@ footer ul li:first-of-type::after {
     width: 25%;
     vertical-align: middle;
     position: relative;
-    border-bottom: 1px solid #c3c3c3;
 }
 .notice-layer table tr td.bg-gr {
     background-color: #f6f6f6;
