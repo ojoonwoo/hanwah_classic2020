@@ -1138,7 +1138,7 @@ footer ul li:first-of-type::after {
     border-collapse: collapse;
     width: 100%;
     margin-bottom: 10px;
-    /* letter-spacing: -0.05em; */
+    border-spacing: 0;
 }
 .notice-layer table thead th, .notice-layer table tbody td {
     text-align: center;
