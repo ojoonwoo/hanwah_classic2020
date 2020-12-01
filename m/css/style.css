@@ -1017,7 +1017,7 @@ footer ul li:first-of-type::after {
     white-space: normal;
     word-break: normal;
     word-wrap: normal;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.3);
 }
 .layer-container:before {
     content: "";

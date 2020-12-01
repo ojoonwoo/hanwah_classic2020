@@ -39,7 +39,7 @@
                     </ul>
                     <!-- 1130 추가 -->
                     <a href="javascript:void(0)" class="covid-anchor" data-layer-open="#notice-layer1">코로나 대응공지</a>
-                    <!-- 1130 추가 -->
+                    <!-- end 1130 추가 -->
                 </nav>
             </div>
             <button type="button" class="event_btn section_jump" data-dest="#section2">
@@ -487,7 +487,7 @@
             </div>
         </div>
     </div>
-    <!-- 1130 추가 -->
+    <!-- end 1130 추가 -->
     <script>
         var paramObj, paramValArr;
         $(function() {
@@ -532,7 +532,7 @@
                 var target = $(this).attr('data-layer-open');
                 popupToggle(target);
             });
-            // 1130 수정 & 추가
+            // end 1130 수정 & 추가
             $('.layer-popup .layer-close').on('click', function() {
                 popupToggle($(this));
             });
@@ -607,8 +607,8 @@
                         $('html, body').animate({scrollTop: $('#section'+paramObj.goSection).offset().top}, 550);
                     }
                     // 1130 추가
-                    popupToggle('#notice-layer1');
-                    // 1130 추가
+                    popupToggle('#notice-layer3');
+                    // end 1130 추가
                 },
                 'scroll': function() {
                     gnbActive.init();

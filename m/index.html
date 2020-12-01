@@ -59,7 +59,7 @@
                     <li>
                         <a href="javascript:void(0)" class="gnb-link anchorNone" data-layer-open="#notice-layer1"><span class="for-a11y">코로나 대응공지</span></a>
                     </li>
-                    <!-- 1130 추가 -->
+                    <!-- end 1130 추가 -->
                     <li>
                         <a href="javascript:void(0)" class="gnb-link fix-color" data-dest="#section6"><span class="for-a11y">알람신청 이벤트!</span></a>
                     </li>
@@ -530,7 +530,7 @@
             </div>
         </div>
     </div>
-    <!-- 1130 추가 -->
+    <!-- end 1130 추가 -->
     <script>
         var paramObj, paramValArr;
 
@@ -565,7 +565,7 @@
                     return false;
                 }
             });
-            // 1130 수정 & 추가
+            // end 1130 수정 & 추가
             $('.btn-role-link').on('click', function() {
                 var url = $(this).attr('data-url');
                 if(url) {
@@ -598,7 +598,7 @@
                 var target = $(this).attr('data-layer-open');
                 popupToggle(target);
             });
-            // 1130 수정 & 추가
+            // end 1130 수정 & 추가
             $('.layer-popup .layer-close').on('click', function() {
                 popupToggle($(this));
             });
@@ -678,8 +678,8 @@
                         $('html, body').animate({scrollTop: $('#section'+paramObj.goSection).offset().top}, 550);
                     }
                     // 1130 추가
-                    popupToggle('#notice-layer1');
-                    // 1130 추가
+                    popupToggle('#notice-layer3');
+                    // end 1130 추가
                 },
                 'scroll': function() {
                     gnbActive.init();
