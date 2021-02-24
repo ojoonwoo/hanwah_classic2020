@@ -30,22 +30,18 @@
                         <h2>소프라노 임선혜와 바로크 프로젝트</h2>
                     </div>
                     <div class="button_wrap">
-                        <!-- 1209 수정 -->
                         <button type="button" class="section_jump" data-dest="#section1">자세히보기</button>
                         <!-- <button type="button" class="book-down">프로그램북 다운로드</button> -->
-                        <a href="#" target="_blank" class="book-down">프로그램북 다운로드</a>
-                        <!-- end 1209 수정 -->
+                        <a href="../프로그램 북_201209.pdf" target="_blank" class="book-down" download>프로그램북 다운로드</a>
 
-                        <!-- 12.7 ~ 12.12 -->
-                        <a href="https://tv.naver.com/l/62956" target="_blank" class="fixed_circle">
+                        <!-- 1211 수정 -->
+                        <a href="javascript:void(0)" class="fixed_circle" data-layer-open="#player-layer1">
                             <img src="./imgs/fixed_circle.png" alt="라이브 공연보기">
                         </a>
-                        <!-- 12.7 ~ 12.12 -->
-                        <!-- 12.13 ~ 12.16 -->
-                        <!-- <a href="https://tv.naver.com/l/62957" target="_blank" class="fixed_circle">
+                        <!-- <a href="javascript:void(0)" class="fixed_circle" data-layer-open="#player-layer1">
                             <img src="./imgs/fixed_circle.png" alt="라이브 공연보기">
                         </a> -->
-                        <!-- 12.13 ~ 12.16 -->
+                        <!-- end 1211 수정 -->
                     </div>
                 </div>
             </div>
@@ -182,7 +178,9 @@
                             <dd>소프라노 임선혜, 지휘/리코더 권민석,<br/>리코더 정윤태, 바리톤 김기훈 등<br>한화 바로크 프로젝트 (악장/바이올린 김나연)</dd>
                         </dl>
                     </div>
-                    <ul>
+                    <!-- 1211 수정 -->
+                    <ul id="section3_1">
+                    <!-- end 1211 수정 -->
                         <li class="waypoints" data-waypoints-delay="100">
                             <div class="title_wrap">
                                 <h3 class="sub_title">2020.12.12.SAT 5:00 PM</h3>
@@ -206,10 +204,8 @@
                             <p class="text">페르골레시의 &lt;마님이 된 하녀&gt;는 총 2막으로 구성된 50여 분 가량의 짧은 희극오페라입니다. 희극오페라의 중요한 시초인 페르골레시의 대표적인 오페라 중 하나로 코믹한 내용과 아름다운 선율이 돋보이는 작품입니다.</p>
                         </li>
                     </ul>
-                    <!-- 1209 수정 -->
                     <!-- <button type="button" class="book-down waypoints"><img src="./imgs/section3_book_down.png" alt="한화클래식 2020 프로그램북 다운로드"></button> -->
                     <a href="#" target="_blank" class="book-down waypoints"><img src="./imgs/section3_book_down.png" alt="한화클래식 2020 프로그램북 다운로드"></a>
-                    <!-- end 1209 수정 -->
                 </div>
                 <div class="ticket_wrap waypoints">
                     <div class="inner">
@@ -555,6 +551,23 @@
             </div>
         </div>
     </div>
+    <!-- 1211 수정 -->
+    <div class="layer-container">
+        <div class="layer-popup player-layer" id="player-layer1">
+            <div class="inner">
+                <button type="button" class="layer-close"><span class="for-a11y">닫기</span></button>
+                <div class="player-container">
+                    <!-- 공연1차 -->
+                    <iframe src='https://tv.naver.com/l/62956/sharePlayer' frameborder='no' scrolling='no' marginwidth='0' marginheight='0' WIDTH='640' HEIGHT='517' allow='autoplay' allowfullscreen></iframe>
+                    <!-- 공연2차 -->
+                    <!-- <iframe src='https://tv.naver.com/l/62957/sharePlayer' frameborder='no' scrolling='no' marginwidth='0' marginheight='0' WIDTH='640' HEIGHT='517' allow='autoplay' allowfullscreen></iframe> -->
+                    <!-- 테스트영상 -->
+                    <!-- <iframe src='https://tv.naver.com/l/62364/sharePlayer' frameborder='no' scrolling='no' marginwidth='0' marginheight='0' WIDTH='640' HEIGHT='517' allow='autoplay' allowfullscreen></iframe> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end 1211 수정 -->
     
     <script>
         var paramObj, paramValArr;
@@ -692,18 +705,31 @@
                 });
             });
 
+            // 1211 수정
             $(window).on({
                 'load': function() {
                     gnbActive.init();
                     if(paramObj.goSection) {
-                        $('html, body').animate({scrollTop: $('#section'+paramObj.goSection).offset().top}, 550);
+                        var weight = 0;
+                        if(paramObj.goSection == "3_1") {
+                            weight = 50;
+                        }
+                        $('html, body').animate({scrollTop: $('#section'+paramObj.goSection).offset().top-weight}, 550);
                     }
-                    popupToggle('#notice-layer2');
+                    // 금요일 퇴근시~월요일 출근직후 아침
+                    // 수요일 오후 2시 이후 #player-layer1 내 iframe src 2차로 변경 필요
+                    // 목요일 출근직후 #player-layer1 내 iframe src 다시보기 영상 id로 변경 필요
+                    popupToggle('#player-layer1');
+
+                    // 월요일 출근직후~수요일 오후2시까지
+                    // popupToggle('#notice-layer2');
+
                 },
                 'scroll': function() {
                     gnbActive.init();
                 }
             });
+            // end 1211 수정
         });
         function formCheck(frm) {
             var phoneRegex = /^01(0|1|[6-9]?)-?([0-9]{3,4})-?([0-9]{4})$/;

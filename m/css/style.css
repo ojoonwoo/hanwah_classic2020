@@ -190,7 +190,7 @@ section .inner {
     vertical-align: top;
     font-size: 11px;
     color: #ffffff;
-    background-color: #e4793a;
+    background-color: #5d5d5d;
     border-radius: 3px;
 }
 .banner .button_wrap .book-down {
@@ -1300,6 +1300,31 @@ footer ul li:first-of-type::after {
     padding: 5px 6px;
     margin-top: 8px;
     border-radius: 3px;
+}
+.player-layer .inner {
+    padding: 40px 20px;
+}
+/* .outer-close {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+    z-index: 0;
+    width: 100%;
+} */
+.player-layer .inner .layer-close {
+    padding: 13px 20px;
+}
+.player-layer .player-container iframe {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 480px;
+    height: 310px;
 }
 /* end 코로나 대응 공지 팝업 */
 

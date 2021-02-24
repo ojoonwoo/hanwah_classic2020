@@ -282,7 +282,7 @@ header .covid-anchor {
     line-height: 60px;
     vertical-align: top;
     color: #ffffff;
-    background-color: #e4793a;
+    background-color: #5d5d5d;
     border-radius: 5px;
     font-size: 21px;
     font-weight: normal;
@@ -1498,6 +1498,33 @@ footer ul li:first-of-type::after {
     padding: 12px 18px;
     margin-top: 13px;
     border-radius: 5px;
+}
+.player-layer .inner {
+    padding: 64px;
+}
+/* .outer-close {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+    z-index: 0;
+    width: 100%;
+} */
+.player-layer .inner .layer-close {
+    padding: 25px;
+}
+.player-layer {
+    /* width: 750px; */
+    width: 800px;
+}
+.player-layer .player-container iframe {
+    display: block;
+    width: 100%;
+    height: 540px;
 }
 /* end 코로나 대응 공지 팝업 */
 
